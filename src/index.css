@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes fade {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade {
+    animation: fade 1s ease-in-out;
+  }
+}
