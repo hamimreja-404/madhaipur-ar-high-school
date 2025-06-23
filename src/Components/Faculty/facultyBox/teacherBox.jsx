@@ -1,12 +1,12 @@
 import React from "react";
 
-function TeacherBox({ name, role, image, subjects }) {
+function TeacherBox({ name, role, image, subjects,Avatar }) {
   return (
     <div className="bg-stone-50 border border-indigo-100 rounded-2xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
       <div className="flex justify-center">
         <img
           className="w-28 h-28 rounded-full object-cover shadow-sm hover:scale-105 transition duration-300"
-          src={image}
+          src={image || Avatar}
           alt={name}
         />
       </div>

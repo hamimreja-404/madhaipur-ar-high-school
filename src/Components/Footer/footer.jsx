@@ -31,8 +31,8 @@ function Footer() {
           <p className="text-sm mb-2">
             257Q+9H2, Madhaipur, West Bengal 732101
           </p>
-          <p className="text-sm">madhaipurschool@gmail.com</p>
-          <p className="text-sm">+91 9265282418</p>
+          <p className="text-sm">hm.mparhs@gamail.com</p>
+          <p className="text-sm">+91 7908621154</p>
         </div>
 
         {/* Nav Links */}

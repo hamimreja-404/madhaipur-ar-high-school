@@ -1,58 +1,130 @@
 const teachersList = [
   {
-    name: "Hamim Reja",
-    role: "B.Tech in ECE",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Abhik Sen",
+    role: "History",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["History", "Civics", "Geography", "Political Science"]
   },
   {
-    name: "Ananya Sen",
-    role: "Senior English Teacher",
-    image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Apurba Maitra",
+    role: "Mathematics",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["English", "Literature", "Communication Skills"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Bapi Lohar",
+    role: "English Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Chumki Debnath",
+    role: "Computer Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_F.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Dulal Lakra",
+    role: "Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Kaberi Choudhury",
+    role: "Sanskrit Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_F.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Manoj Sarkar",
+    role: "Bangali Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Md Abdul Wahed",
+    role: "Arabic Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
-    name: "Ravi Kumar",
-    role: "Mathematics Faculty",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Md Mazed Ali",
+    role: "English Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
+  {
+    name: "Samir Kundu",
+    role: "Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Shekhar Kr Chowdhury",
+    role: "Sports Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Souvik Banerjee",
+    role: "Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Subhankar Bhattacharya",
+    role: "Biology Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Subhankar Mani",
+    role: "History Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Susanta Kumar Mandal",
+    role: "Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Satyajit Karmakar",
+    role: "History Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Ratan Saha",
+    role: "History Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_M.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    name: "Runu Choudhury",
+    role: "History Faculty",
+    image: "",
+    Avatar: "src/images/Faculty/Avatar_F.jpg",
+    subjects: ["Algebra", "Calculus", "Geometry"]
+  }
 ];
 
 export default teachersList;

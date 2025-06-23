@@ -3,12 +3,10 @@ import Photos from "../../Data/Photos";
 import GalleryBox from "./GalleryBox";
 import Activity from "../../Data/Activity";
 import GloriousMoments from "../../Data/GloriousMoments";
-
-import { app } from "../Firebase";
-import { getStorage,ref ,uploadBytes,getDownloadURL } from "firebase/storage";
+import { NavLink } from "react-router-dom";
 function Gallery() {
   return (
-    <div className="bg-white py-12 font-sans">
+    <div className="bg-white py-12 font-sans ">
       <div className="flex justify-center mt-10">
         <div className="relative w-7xl max-w-7xl h-7xl sm:h-[450px] rounded-xl overflow-hidden shadow-md">
           <img
@@ -57,8 +55,54 @@ function Gallery() {
           ))}
         </div>
       </div>
-      <div>
+      <div></div>
+      <div className="mt-24 mb-16 text-center font-sans">
+        <div className="flex flex-col items-center px-6">
+          {/* Icon */}
+          <div className="mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-12 w-12 text-indigo-500 animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M7 8h10M7 12h4m1 8a9 9 0 110-18 9 9 0 010 18z"
+              />
+            </svg>
+          </div>
 
+          {/* Heading */}
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4 tracking-tight">
+            Have Photos to Share?
+          </h2>
+
+          {/* Description */}
+          <p className="text-gray-600 max-w-2xl mx-auto text-md md:text-lg leading-relaxed mb-8">
+            Captured a special school moment? Share your best photos with us and
+            help preserve the vibrant memories of our events, celebrations, and
+            student life. Your contribution could be featured in our official
+            gallery!
+          </p>
+
+          <NavLink
+            to="/photoShare"
+            className={({ isActive }) =>
+              isActive
+                ? "text-yellow-400 font-semibold flex items-center"
+                : "text-white hover:text-yellow-300 transition flex items-center"
+            }
+          >
+            <p className="bg-indigo-600 hover:bg-indigo-700 transition duration-300 ease-in-out text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-1">
+            📤 Submit Your Photos
+          </p>
+          </NavLink>
+          
+        </div>
       </div>
     </div>
   );

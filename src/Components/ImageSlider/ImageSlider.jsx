@@ -13,15 +13,15 @@ export default function AutoSlider() {
 
   return (
     <div className="w-full bg-white py-4">
-      {/* Responsive aspect ratios: mobile -> tablet -> desktop */}
-      <div className="w-7xl h-7xl max-w-7xl mx-auto relative overflow-hidden rounded-lg shadow aspect-square sm:aspect-[4/3] md:aspect-video">
+      {/* Maintain original image aspect ratio: 2.6 (~13/5) */}
+      <div className="w-full max-w-7xl mx-auto relative overflow-hidden rounded-lg shadow aspect-square sm:aspect-[4/3] md:aspect-[13/5] lg:aspect-[13/5]">
         {imageList.map((img, idx) => (
           <img
             key={idx}
             src={img}
             alt={`Slide ${idx + 1}`}
             className={`absolute top-0 left-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 ease-in-out ${
-              idx === currentIndex ? "opacity-100 fade z-10" : "opacity-0 z-0"
+              idx === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           />
         ))}

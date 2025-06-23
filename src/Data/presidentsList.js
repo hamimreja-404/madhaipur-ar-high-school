@@ -1,40 +1,44 @@
 const presidentsList = [
   {
-    name: "Hamim Reja",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
-    year: "2020-2927",
-    work: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique temporibus modi, beatae perspiciatis ratione consequatur facere ipsa accusamus ab sit deserunt ex, magnam veniam, suscipit eos asperiores accusantium tempore harum?",
+    name: "Anirban Chatterjee",
+    image: "",
+    Avatar: "src/images/President/Avatar.jpg",
+    year: "2023–2024",
+    work: "Introduced a school-wide digital attendance system and launched the Eco Smart Campus initiative.",
     current: true
   },
   {
-    name: "Hamim Reja",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
-    year: "2020-2927",
-    work: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique temporibus modi, beatae perspiciatis ratione consequatur facere ipsa accusamus ab sit deserunt ex, magnam veniam, suscipit eos asperiores accusantium tempore harum?",
+    name: "Ritwik Saha",
+    image: "",
+    Avatar: "src/images/President/Avatar.jpg",
+    year: "2022–2023",
+    work: "Led the coding club and organized the first inter-school hackathon competition.",
     current: false
   },
   {
-    name: "Hamim Reja",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
-    year: "2020-2927",
-    work: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique temporibus modi, beatae perspiciatis ratione consequatur facere ipsa accusamus ab sit deserunt ex, magnam veniam, suscipit eos asperiores accusantium tempore harum?",
+    name: "Arpan Ghosh",
+    image: "",
+    Avatar: "src/images/President/Avatar.jpg",
+    year: "2021–2022",
+    work: "Started the school’s podcast series and initiated mental health awareness workshops.",
     current: false
   },
   {
-    name: "Hamim Reja",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
-    year: "2020-2927",
-    work: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique temporibus modi, beatae perspiciatis ratione consequatur facere ipsa accusamus ab sit deserunt ex, magnam veniam, suscipit eos asperiores accusantium tempore harum?",
+    name: "Sourav Banerjee",
+    image: "",
+    Avatar: "src/images/President/Avatar.jpg",
+    year: "2020–2021",
+    work: "Transitioned the student council activities online during COVID and conducted virtual debates.",
     current: false
   },
   {
-    name: "Hamim Reja",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
-    year: "2020-2927",
-    work: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique temporibus modi, beatae perspiciatis ratione consequatur facere ipsa accusamus ab sit deserunt ex, magnam veniam, suscipit eos asperiores accusantium tempore harum?",
+    name: "Debanjan Das",
+    image: "",
+    Avatar: "src/images/President/Avatar.jpg",
+    year: "2019–2020",
+    work: "Revamped the school’s annual magazine and initiated monthly leadership training sessions.",
     current: false
-  },
-
+  }
 ];
 
 export default presidentsList;

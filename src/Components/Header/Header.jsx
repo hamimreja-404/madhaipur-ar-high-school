@@ -9,6 +9,7 @@ import {
   Image as GalleryIcon,
   Menu,
   X,
+  ShieldUser,
 } from "lucide-react";
 
 import { SocialIcon } from "react-social-icons";
@@ -30,7 +31,7 @@ function Navbar() {
     },
     {
       name: "Presidents",
-      path: "/presidents", 
+      path: "/presidents",
       icon: <Medal size={18} className="mr-2" />,
     },
     {
@@ -56,33 +57,36 @@ function Navbar() {
 
         {/* Social Media Icons */}
         <div className="flex gap-4 ">
+          <span>📧 contact@madhaipurschool.ac.in</span>
+          <span>📞 +91 92725228335</span>
           <SocialIcon
             url="https://facebook.com"
             target="_blank"
             fgColor="#fff"
             bgColor="transparent"
-             style={{ height: 30, width: 30 }}
-          />
-          <SocialIcon
-            url="https://linkedin.com"
-            target="_blank"
-            fgColor="#fff"
-            bgColor="transparent"
-              style={{ height: 30, width: 30 }}
+            style={{ height: 30, width: 30 }}
           />
           <SocialIcon
             url="mailto:madhaipurschool@gmail.com"
             fgColor="#fff"
             bgColor="transparent"
-              style={{ height: 30, width: 30 }}
+            style={{ height: 30, width: 30 }}
           />
-          <SocialIcon
-            url="https://instagram.com"
-            target="_blank"
+          <NavLink
+            to="/adminLogin"
+            className={({ isActive }) =>
+              isActive
+                ? "text-yellow-400 font-semibold flex items-center"
+                : "text-white hover:text-yellow-300 transition flex items-center"
+            }
+          >
+          <ShieldUser
             fgColor="#fff"
             bgColor="transparent"
-              style={{ height: 30, width: 30 }}
+            style={{ height: 20, width: 20 }}
+            className="mt-1"
           />
+          </NavLink>
         </div>
       </div>
 
@@ -95,7 +99,7 @@ function Navbar() {
         />
         <div className="text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl font-bold font-serif text-slate-800">
-            MADHAIPUR A.R. HIGH SCHOOL (H.S.)
+            MADHAIPUR A.R. HIGH SCHOOL (H.S)
           </h1>
           <p className="text-base sm:text-lg font-semibold text-indigo-600">
             মাধইপুর এ.আর. উচ্চ বিদ্যালয় (এইচ.এস.)

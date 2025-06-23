@@ -1,10 +1,12 @@
 import React from "react";
 import presidentsList from "../../Data/presidentsList";
 import PresidentBox from "./PresidentBox";
+import AutoSlider from "../ImageSlider/ImageSlider";
 
 function Presidents() {
   return (
     <div className="bg-white py-12 font-sans">
+    
       {/* Header Section */}
       <div className="text-center mb-12 px-4">
         <h1 className="text-4xl font-extrabold text-indigo-800 mb-4">
@@ -24,11 +26,11 @@ function Presidents() {
         <div className="flex flex-col md:flex-row bg-stone-50 border border-gray-200 rounded-2xl p-6 shadow-lg w-full max-w-5xl">
           <img
             className="w-40 h-40 md:w-48 md:h-48 rounded-xl object-cover border border-gray-300 mx-auto md:mx-0"
-            src="src/images/Logo/DP.jpg"
+            src="src/images/President/Rabiul.jpg"
             alt="Labib Hasan"
           />
           <div className="mt-4 md:mt-0 md:ml-8">
-            <h3 className="text-2xl font-bold text-indigo-900">Labib Hasan</h3>
+            <h3 className="text-2xl font-bold text-indigo-900">Rabiul Islam</h3>
             <p className="text-sm text-indigo-600 font-medium">President (2022 - Present)</p>
             <blockquote className="mt-2 italic text-gray-500 border-l-4 pl-4 border-indigo-300">
               "Education isn’t about filling minds with facts, but igniting the curiosity to explore."
@@ -53,6 +55,7 @@ function Presidents() {
               key={index}
               name={president.name}
               image={president.image}
+              Avatar={president.Avatar}
               year={president.year}
               work={president.work}
             />

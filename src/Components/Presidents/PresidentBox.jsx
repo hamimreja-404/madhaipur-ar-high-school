@@ -1,12 +1,12 @@
 import React from "react";
 
-function PresidentBox({ name, image, year, work }) {
+function PresidentBox({ name, image,Avatar, year, work }) {
   return (
     <div className="bg-stone-50 border border-indigo-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300">
       <div className="flex justify-center">
         <img
           className="w-24 h-24 rounded-full object-cover shadow-sm hover:scale-105 transition duration-300"
-          src={image}
+          src={image || Avatar}
           alt={name}
         />
       </div>

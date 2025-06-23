@@ -3,14 +3,8 @@ import TeacherBox from "./facultyBox/teacherBox";
 import teachersList from "../../Data/teachersList";
 import paraTeachers from "../../Data/paraTeachers";
 import nonTeaching from "../../Data/nonTeaching";
+import headTeacher from "../../Data/headTeacher";
 
-// ✅ Define your Head Teacher data (you can also import it from a file)
-const headTeacher = {
-  name: "Dr. A. Sharma",
-  role: "Head of School",
-  image: "/src/images/Faculty/head_teacher.jpg", // adjust path accordingly
-  subjects: ["Leadership", "Mentorship"], // optional
-};
 
 function Faculty() {
   return (
@@ -47,6 +41,7 @@ function Faculty() {
               name={headTeacher.name}
               role={headTeacher.role}
               image={headTeacher.image}
+              Avatar={headTeacher.Avatar}
               subjects={headTeacher.subjects}
             />
           </div>
@@ -65,6 +60,7 @@ function Faculty() {
                 role={teacher.role}
                 image={teacher.image}
                 subjects={teacher.subjects}
+                Avatar={teacher.Avatar}
               />
             ))}
           </div>
@@ -83,6 +79,7 @@ function Faculty() {
                 role={teacher.role}
                 image={teacher.image}
                 subjects={teacher.subjects}
+                Avatar={teacher.Avatar}
               />
             ))}
           </div>
@@ -101,6 +98,7 @@ function Faculty() {
                 role={teacher.role}
                 image={teacher.image}
                 subjects={teacher.subjects}
+                Avatar={teacher.Avatar}
               />
             ))}
           </div>

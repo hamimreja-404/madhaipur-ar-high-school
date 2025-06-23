@@ -49,9 +49,9 @@ function HomePage() {
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 font-sans">
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] overflow-hidden mb-12">
+      <section className="relative w-full bg-black/50 overflow-hidden mb-12">
         <AutoSlider />
-        <div className="w-full h-[390px] mt-5 rounded-xl absolute inset-0 z-10 flex flex-col items-center justify-center text-white bg-black/50 text-center px-4 transition-opacity duration-500 hover:opacity-95">
+        <div className="w-full h-[477px] mt-5 absolute inset-0 z-10 flex flex-col items-center justify-center text-white bg-black/50 text-center px-4 transition-opacity duration-500 hover:opacity-95">
           <h1 className="text-3xl sm:text-5xl font-bold drop-shadow font-serif">
             Welcome to Madhaipur A.R. High School (H.S.)
           </h1>
@@ -115,6 +115,7 @@ function HomePage() {
               role={teacher.role}
               image={teacher.image}
               subjects={teacher.subjects}
+              Avatar={teacher.Avatar}
             />
           ))}
         </div>
