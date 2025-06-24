@@ -15,6 +15,7 @@ function Faculty() {
           <div className="relative w-full max-w-7xl h-[350px] sm:h-[450px] rounded-xl overflow-hidden shadow-md">
             <img
               className="w-full h-full object-cover"
+              
               src="/src/images/Group/All.jpg"
               alt="Faculty Group"
             />

@@ -9,7 +9,7 @@ const teachersList = [
   {
     name: "Apurba Maitra",
     role: "Mathematics",
-    image: "",
+    image: "src/images/Faculty/Aparba.jpg",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["English", "Literature", "Communication Skills"]
   },
