@@ -288,18 +288,13 @@ function Footer() {
             alt="Developer"
             className="w-20 h-20 rounded-full border-2 border-white shadow-md"
           />
-          <p className="text-xs text-gray-300 text-center lg:text-right italic leading-tight">
+          <p className="text-[15px] text-gray-300 text-center lg:text-right italic leading-tight">
             Designed & Developed by{" "}
             <NavLink to="/portfolio" className="text-yellow-300 font-semibold hover:underline">
               Hamim Reja
             </NavLink><br />Alumni of Madhaipur A.R. High School
           </p>
-          <div className="flex gap-3 mt-2">
-            <SocialIcon url="https://facebook.com" fgColor="#fff" bgColor="transparent" />
-            <SocialIcon url="mailto:madhaipurschool@gmail.com" fgColor="#fff" bgColor="transparent" />
-            <SocialIcon url="https://linkedin.com" fgColor="#fff" bgColor="transparent" />
-            <SocialIcon url="https://instagram.com" fgColor="#fff" bgColor="transparent" />
-          </div>
+
         </div>
       </div>
 

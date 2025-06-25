@@ -1,14 +1,14 @@
 const paraTeachers = [
   {
     name: "Anjumanara Khatun",
-    role: "History",
+    role: "B.A in History",
     image:
       "src/images/Faculty/Anjumanara.jpg",
     subjects: ["History", "English", "Geography", "Our Enviroment"],
   },
   {
     name: "Md Safikul Islam",
-    role: "Science",
+    role: "B.sc",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Mathematics", "Physical Science"],

@@ -1,129 +1,129 @@
 const teachersList = [
   {
     name: "Abhik Sen",
-    role: "History",
+    role: "M.A in History",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["History", "Civics", "Geography", "Political Science"]
+    subjects: ["History"]
   },
   {
     name: "Apurba Maitra",
-    role: "Mathematics",
+    role: "M.Sc in Pure Mathematics",
     image: "src/images/Faculty/Aparba.jpg",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["English", "Literature", "Communication Skills"]
+    subjects: ["Mathematics"]
   },
   {
     name: "Bapi Lohar",
     role: "English Faculty",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["English"]
   },
   {
     name: "Chumki Debnath",
     role: "Computer Faculty",
     image: "src/images/Faculty/Chumki.jpg",
     Avatar: "src/images/Faculty/Avatar_F.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["Computer"]
   },
   {
     name: "Dulal Lakra",
     role: "Faculty",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["Education"]
   },
   {
     name: "Kaberi Choudhury",
     role: "Sanskrit Faculty",
     image: "",
     Avatar: "src/images/Faculty/Avatar_F.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["Sanskrit"]
   },
   {
     name: "Manoj Sarkar",
-    role: "Bangali Faculty",
+    role: "M.A in Bangali Faculty",
     image: "src/images/Faculty/Manoj.jpg",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["Bengali"]
   },
   {
     name: "Md Abdul Wahed",
-    role: "Arabic Faculty",
+    role: "B.A in Arabic",
     image: "src/images/Faculty/Wahed.jpg",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["Arabic"]
   },
   {
     name: "Md Mazed Ali",
-    role: "English Faculty",
+    role: "M.A in English",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["English"]
   },
   {
     name: "Samir Kundu",
-    role: "Faculty",
+    role: " ",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["English"]
   },
   {
     name: "Shekhar Kr Chowdhury",
     role: "Sports Faculty",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: [" "]
   },
   {
     name: "Souvik Banerjee",
-    role: "Faculty",
+    role: " ",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: [" "]
   },
   {
     name: "Subhankar Bhattacharya",
-    role: "Biology Faculty",
+    role: "M.SC in Biology(Zoology)",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["Life Science"]
   },
   {
     name: "Subhankar Mani",
-    role: "History Faculty",
+    role: "M.A in History",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: ["History"]
   },
   {
     name: "Susanta Kumar Mandal",
-    role: "Faculty",
+    role: " ",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: [" "]
   },
   {
     name: "Satyajit Karmakar",
-    role: "History Faculty",
+    role: " ",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: [" "]
   },
   {
     name: "Ratan Saha",
-    role: "History Faculty",
+    role: " ",
     image: "",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: [" "]
   },
   {
     name: "Runu Choudhury",
-    role: "History Faculty",
+    role: " ",
     image: "src/images/Faculty/Runu.jpg",
     Avatar: "src/images/Faculty/Avatar_F.jpg",
-    subjects: ["Algebra", "Calculus", "Geometry"]
+    subjects: [ ""]
   }
 ];
 

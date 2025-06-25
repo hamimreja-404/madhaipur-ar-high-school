@@ -9,7 +9,7 @@ const nonTeaching = [
   {
     name: "Lila Mandal",
     role: "Group-D",
-    image: "",
+    image: "src/images/Faculty/Lila.jpg",
     Avatar: "src/images/Faculty/GD.jpg",
     subjects: []
   },

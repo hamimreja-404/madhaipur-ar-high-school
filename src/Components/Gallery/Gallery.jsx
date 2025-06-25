@@ -11,7 +11,7 @@ function Gallery() {
         <div className="relative w-7xl max-w-7xl h-7xl sm:h-[450px] rounded-xl overflow-hidden shadow-md">
           <img
             className="w-full h-full object-cover"
-            src="/src/images/Photo/Collage.jpg"
+            src="src/images/Photo/Collage.jpg"
             alt="Faculty Group"
           />
           <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center px-4">

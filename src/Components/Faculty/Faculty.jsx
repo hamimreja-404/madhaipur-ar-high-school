@@ -16,7 +16,7 @@ function Faculty() {
             <img
               className="w-full h-full object-cover"
               
-              src="/src/images/Group/All.jpg"
+              src="src/images/Group/All.jpg"
               alt="Faculty Group"
             />
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center px-4">

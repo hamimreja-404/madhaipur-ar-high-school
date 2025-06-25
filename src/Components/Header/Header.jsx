@@ -136,17 +136,11 @@ function Navbar() {
           🎓 Dedicated to Excellence in Education
         </span>
         <div className="flex gap-4 ">
-          <span>📧 contact@madhaipurschool.ac.in</span>
-          <span>📞 +91 92725228335</span>
+          <span>📧 hm.mparhs@gmail.com</span>
+          <span>📞 +91 7908621154</span>
+
           <SocialIcon
-            url="https://facebook.com"
-            target="_blank"
-            fgColor="#fff"
-            bgColor="transparent"
-            style={{ height: 30, width: 30 }}
-          />
-          <SocialIcon
-            url="mailto:madhaipurschool@gmail.com"
+            url="mailto:hm.mparhs@gmail.com"
             fgColor="#fff"
             bgColor="transparent"
             style={{ height: 30, width: 30 }}
@@ -175,7 +169,7 @@ function Navbar() {
             MADHAIPUR A.R. HIGH SCHOOL (H.S.)
           </h1>
           <p className="text-base sm:text-lg font-semibold text-indigo-600">
-            মাধইপুর এ.আর. উচ্চ বিদ্যালয় (এইচ.এস.)
+            মাধাইপুর এ.আর. উচ্চ বিদ্যালয় (উঃমাঃ)
           </p>
           <p className="text-sm text-gray-500 mt-1">
             Under the Department of Education, Govt. of West Bengal <br />

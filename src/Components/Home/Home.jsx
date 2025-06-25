@@ -5,7 +5,7 @@ import { BookOpen, Eye, ArrowRightCircle } from "lucide-react";
 import Photos from "../../Data/Photos";
 import TeacherBox from "../Faculty/facultyBox/teacherBox";
 import teachersList from "../../Data/teachersList";
-
+import ImportantNotice from "../Notice/ImportantNotice";
 function Counter({ end, label }) {
   const [count, setCount] = useState(0);
   const ref = useRef();
@@ -66,9 +66,12 @@ function HomePage() {
           </NavLink>
         </div>
       </section>
-
-      {/* About Section */}
+      <div className="flex">
+        
+        <div>
+          {/* About Section */}
       <section className="mb-16">
+      
         <h2 className="text-3xl font-bold text-indigo-900 mb-4 font-serif">About Us</h2>
         <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
           Founded in 1974, Madhaipur A. R. High School (HS) is the result of a powerful vision held by three eminent local pioneers — Haji Amiruddin, Ramjan Mandal, and Radhakishan Ram. With a goal to spread the light of education in Madhaipur and its neighboring villages, they donated land and laid the foundation for a learning institution that continues to shape young minds to this day.
@@ -77,7 +80,14 @@ function HomePage() {
           The name "A. R." in the school title honors their legacy, reminding every student and teacher of their noble contribution. Today, the school stands tall as a pillar of knowledge, character-building, and inclusive education in the region.
         </p>
 
-        <div className="mt-8 p-6 shadow flex flex-col md:flex-row md:justify-between gap-8">
+        
+      </section>
+        </div>
+        <div>
+        <ImportantNotice/>
+        </div>
+      </div>
+      <div className="mt-1 p-6 shadow flex flex-col md:flex-row md:justify-between gap-8">
           <div className="md:w-1/2 bg-indigo-50 rounded-lg p-3 flex flex-col items-center text-center transition-transform duration-500 hover:scale-105">
             <BookOpen className="text-indigo-600 mb-4" size={40} />
             <h3 className="text-2xl font-semibold text-indigo-800 mb-2 font-serif">Our Mission</h3>
@@ -102,10 +112,9 @@ function HomePage() {
           <span className="text-sm font-medium">Read More</span>
           <ArrowRightCircle size={20} className="transition-transform group-hover:translate-x-1" />
         </NavLink>
-      </section>
 
       {/* Faculty Section */}
-      <section className="mb-16">
+      <section className="mb-16 mt-10">
         <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">Our Faculty</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teachersList.slice(0, 3).map((teacher, index) => (
@@ -121,7 +130,7 @@ function HomePage() {
         </div>
         <NavLink
           to="/Faculty"
-          className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
+          className="mt-6  group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
         >
           <span className="text-sm font-medium">View Full Faculty</span>
           <ArrowRightCircle size={20} className="transition-transform group-hover:translate-x-1" />
@@ -154,7 +163,7 @@ function HomePage() {
       <section className="relative w-full max-w-7xl h-[400px] sm:h-[450px] rounded-xl overflow-hidden shadow-md mx-auto mb-20">
         <img
           className="w-full h-full object-cover"
-          src="/src/images/Group/All.jpg"
+          src="src/images/Group/All.jpg"
           alt="School Community"
         />
         <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-white text-center px-4">

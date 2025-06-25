@@ -1,9 +1,9 @@
 const headTeacher = {
   name: "Pratap Biswas",
-  role: "Mathematics",
+  role: "M.Sc in Mathematics",
   image: "", 
   Avatar: "src/images/Faculty/Hm.jpg",
-  subjects: ["Leadership", "Mentorship"], 
+  subjects: ["Mathematics"], 
 };
 
 export default headTeacher;
