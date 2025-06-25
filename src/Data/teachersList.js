@@ -9,7 +9,7 @@ const teachersList = [
   {
     name: "Apurba Maitra",
     role: "M.Sc in Pure Mathematics",
-    image: "https://drive.google.com/file/d/111Za-o7A6Y3pZLA_xStFA4B68ySHH4sj/view?usp=sharing",
+    image: "https://drive.google.com/uc?export=view&id=111Za-o7A6Y3pZLA_xStFA4B68ySHH4sj",
     Avatar: "https://hamimreja-404.github.io/MARHS/images/Faculty/Avatar_M.jpg",
     subjects: ["Mathematics"]
   },
