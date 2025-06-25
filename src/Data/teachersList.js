@@ -1,3 +1,7 @@
+import img1 from '../images/Side_Show/Side_1.jpg';
+import img2 from '../images/Side_Show/Side_2.jpg';
+import img3 from '../images/Side_Show/Side_3.jpg';
+import img4 from '../images/Side_Show/Side_4.jpg';
 
 
 
@@ -5,14 +9,14 @@ const teachersList = [
   {
     name: "Abhik Sen",
     role: "M.A in History",
-    image: "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?ga=GA1.1.285306588.1687157408&semt=ais_hybrid&w=740",
+    image: {img1},
     Avatar: "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?ga=GA1.1.285306588.1687157408&semt=ais_hybrid&w=740",
     subjects: ["History"]
   },
   {
     name: "Apurba Maitra",
     role: "M.Sc in Pure Mathematics",
-    image: "https://drive.google.com/uc?export=view&id=111Za-o7A6Y3pZLA_xStFA4B68ySHH4sj",
+    image: {img2},
     Avatar: "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?ga=GA1.1.285306588.1687157408&semt=ais_hybrid&w=740",
     subjects: ["Mathematics"]
   },
