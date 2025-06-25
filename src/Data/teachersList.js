@@ -1,9 +1,11 @@
 
+
+
 const teachersList = [
   {
     name: "Abhik Sen",
     role: "M.A in History",
-    image: "",
+    image: "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?ga=GA1.1.285306588.1687157408&semt=ais_hybrid&w=740",
     Avatar: "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?ga=GA1.1.285306588.1687157408&semt=ais_hybrid&w=740",
     subjects: ["History"]
   },

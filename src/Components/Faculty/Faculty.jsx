@@ -6,7 +6,6 @@ import nonTeaching from "../../Data/nonTeaching";
 import headTeacher from "../../Data/headTeacher";
 
 
-
 function Faculty() {
   return (
     <>
@@ -17,7 +16,7 @@ function Faculty() {
             <img
               className="w-full h-full object-cover"
               
-              src="../images/Group/All.jpg"
+              // src={img1}
               alt="Faculty Group"
             />
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center px-4">
