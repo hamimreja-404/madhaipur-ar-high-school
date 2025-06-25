@@ -9,7 +9,8 @@ import ImportantNotice from "../Notice/ImportantNotice";
 function Counter({ end, label }) {
   const [count, setCount] = useState(0);
   const ref = useRef();
-
+  console.log(Photos);
+  console.log(TeacherBox);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
