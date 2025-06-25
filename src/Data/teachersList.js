@@ -9,7 +9,7 @@ const teachersList = [
   {
     name: "Apurba Maitra",
     role: "M.Sc in Pure Mathematics",
-    image: "/images/Faculty/Aparba.jpg",
+    image: "./images/Faculty/Aparba.jpg",
     Avatar: "/images/Faculty/Avatar_M.jpg",
     subjects: ["Mathematics"]
   },
@@ -23,7 +23,7 @@ const teachersList = [
   {
     name: "Chumki Debnath",
     role: "Computer Faculty",
-    image: "/images/Faculty/Chumki.jpg",
+    image: "./images/Faculty/Chumki.jpg",
     Avatar: "/images/Faculty/Avatar_F.jpg",
     subjects: ["Computer"]
   },
@@ -44,7 +44,7 @@ const teachersList = [
   {
     name: "Manoj Sarkar",
     role: "M.A in Bangali Faculty",
-    image: "/images/Faculty/Manoj.jpg",
+    image: "./images/Faculty/Manoj.jpg",
     Avatar: "/images/Faculty/Avatar_M.jpg",
     subjects: ["Bengali"]
   },
