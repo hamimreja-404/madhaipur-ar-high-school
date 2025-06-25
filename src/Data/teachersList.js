@@ -23,7 +23,7 @@ const teachersList = [
   {
     name: "Chumki Debnath",
     role: "Computer Faculty",
-    image: "",
+    image: "src/images/Faculty/Chumki.jpg",
     Avatar: "src/images/Faculty/Avatar_F.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
@@ -44,14 +44,14 @@ const teachersList = [
   {
     name: "Manoj Sarkar",
     role: "Bangali Faculty",
-    image: "",
+    image: "src/images/Faculty/Manoj.jpg",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
   {
     name: "Md Abdul Wahed",
     role: "Arabic Faculty",
-    image: "",
+    image: "src/images/Faculty/Wahed.jpg",
     Avatar: "src/images/Faculty/Avatar_M.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   },
@@ -121,7 +121,7 @@ const teachersList = [
   {
     name: "Runu Choudhury",
     role: "History Faculty",
-    image: "",
+    image: "src/images/Faculty/Runu.jpg",
     Avatar: "src/images/Faculty/Avatar_F.jpg",
     subjects: ["Algebra", "Calculus", "Geometry"]
   }

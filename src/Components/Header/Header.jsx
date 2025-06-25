@@ -35,9 +35,17 @@ function Navbar() {
   }, [location.pathname]);
 
   const navItems = [
-    { name: "Home", path: "/", icon: <Home size={18} className="mr-2" /> },
-    { name: "About Us", path: "/about", icon: <Info size={18} className="mr-2" /> },
-    { name: "Notice Board", path: "/notice", icon: <Bell size={18} className="mr-2" /> },
+    { name: "Home", path: "/home", icon: <Home size={18} className="mr-2" /> },
+    {
+      name: "About Us",
+      path: "/about",
+      icon: <Info size={18} className="mr-2" />,
+    },
+    {
+      name: "Notice Board",
+      path: "/notice",
+      icon: <Bell size={18} className="mr-2" />,
+    },
     {
       name: "Admission",
       path: "/admission",
@@ -59,9 +67,51 @@ function Navbar() {
         { name: "Syllabus", path: "/academics#syllabus" },
       ],
     },
-    { name: "Faculty", path: "/faculty", icon: <Users size={18} className="mr-2" /> },
-    { name: "Presidents", path: "/presidents", icon: <Medal size={18} className="mr-2" /> },
-    { name: "Gallery", path: "/gallery", icon: <GalleryIcon size={18} className="mr-2" /> },
+    {
+      name: (
+        <span className="flex items-center gap-1">
+          <span className="ml-1">Faculty & Leadership</span>
+        </span>
+      ),
+      path: "/Faculty&Leadership",
+      hasDropdown: true,
+      submenu: [
+        {
+          name: (
+            <span className="flex items-center">
+              <Users size={14} className="mr-2" />
+              Faculty
+            </span>
+          ),
+          path: "/faculty&leadership#faculty",
+        },
+        {
+          name: (
+            <span className="flex items-center">
+              <Medal size={14} className="mr-2" />
+              Presidents
+            </span>
+          ),
+          path: "/faculty&leadership#presidents",
+        },
+      ],
+    },
+    // {
+    //   name: "Faculty & Leadership",
+    //   path: "/Faculty&Leadership",
+    //   hasDropdown: true,
+    //   submenu: [
+    //     { name: "Faculty", path: "/faculty",icon: <Users size={15} className="mr-2" />  },
+    //     { name: "Presidents", path: "/presidents", icon: <Medal size={15} className="mr-2" /> }
+    //   ],
+    // },
+    // { name: "Faculty", path: "/faculty", icon: <Users size={18} className="mr-2" /> },
+    // { name: "Presidents", path: "/presidents", icon: <Medal size={18} className="mr-2" /> },
+    {
+      name: "Gallery",
+      path: "/gallery",
+      icon: <GalleryIcon size={18} className="mr-2" />,
+    },
   ];
 
   const handleSubmenuClick = (path) => {
@@ -88,16 +138,38 @@ function Navbar() {
         <div className="flex gap-4 ">
           <span>📧 contact@madhaipurschool.ac.in</span>
           <span>📞 +91 92725228335</span>
-          <SocialIcon url="https://facebook.com" target="_blank" fgColor="#fff" bgColor="transparent" style={{ height: 30, width: 30 }} />
-          <SocialIcon url="mailto:madhaipurschool@gmail.com" fgColor="#fff" bgColor="transparent" style={{ height: 30, width: 30 }} />
-          <NavLink to="/adminLogin" className={({ isActive }) => isActive ? "text-yellow-400 font-semibold flex items-center" : "text-white hover:text-yellow-300 transition flex items-center"}>
+          <SocialIcon
+            url="https://facebook.com"
+            target="_blank"
+            fgColor="#fff"
+            bgColor="transparent"
+            style={{ height: 30, width: 30 }}
+          />
+          <SocialIcon
+            url="mailto:madhaipurschool@gmail.com"
+            fgColor="#fff"
+            bgColor="transparent"
+            style={{ height: 30, width: 30 }}
+          />
+          <NavLink
+            to="/adminLogin"
+            className={({ isActive }) =>
+              isActive
+                ? "text-yellow-400 font-semibold flex items-center"
+                : "text-white hover:text-yellow-300 transition flex items-center"
+            }
+          >
             <ShieldUser style={{ height: 20, width: 20 }} className="mt-1" />
           </NavLink>
         </div>
       </div>
 
       <div className="bg-white py-6 px-4 flex justify-center flex-col md:flex-row items-center gap-5 md:gap-10 shadow-sm">
-        <img src="src/images/Logo/51588971215.png" alt="School Logo" className="h-20 w-auto" />
+        <img
+          src="src/images/Logo/51588971215.png"
+          alt="School Logo"
+          className="h-20 w-auto"
+        />
         <div className="text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl font-bold font-serif text-slate-800">
             MADHAIPUR A.R. HIGH SCHOOL (H.S.)
@@ -106,7 +178,8 @@ function Navbar() {
             মাধইপুর এ.আর. উচ্চ বিদ্যালয় (এইচ.এস.)
           </p>
           <p className="text-sm text-gray-500 mt-1">
-            Under the Department of Education, Govt. of West Bengal
+            Under the Department of Education, Govt. of West Bengal <br />
+            Dice Code: 19060806004 | School Index: R1226 | H.S. Score: 111179
           </p>
         </div>
       </div>
@@ -120,9 +193,15 @@ function Navbar() {
                   <div className="flex items-center">
                     <NavLink
                       to={item.path}
-                      className={({ isActive }) => isActive ? "text-yellow-400 border-b-2 border-yellow-400 pb-1 flex items-center" : "hover:text-yellow-300 transition-all flex items-center"}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-yellow-400 border-b-2 border-yellow-400 pb-1 flex items-center"
+                          : "hover:text-yellow-300 transition-all flex items-center"
+                      }
                       onMouseEnter={() => setOpenDropdown(index)}
-                      onClick={() => setOpenDropdown(openDropdown === index ? null : index)}
+                      onClick={() =>
+                        setOpenDropdown(openDropdown === index ? null : index)
+                      }
                     >
                       {item.icon}
                       {item.name}
@@ -132,7 +211,11 @@ function Navbar() {
                 ) : (
                   <NavLink
                     to={item.path}
-                    className={({ isActive }) => isActive ? "text-yellow-400 border-b-2 border-yellow-400 pb-1 flex items-center" : "hover:text-yellow-300 transition-all flex items-center"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-yellow-400 border-b-2 border-yellow-400 pb-1 flex items-center"
+                        : "hover:text-yellow-300 transition-all flex items-center"
+                    }
                   >
                     {item.icon}
                     {item.name}
@@ -150,6 +233,7 @@ function Navbar() {
                         onClick={() => handleSubmenuClick(subItem.path)}
                         className="block text-left w-full py-1 text-sm text-white hover:text-yellow-300 transition"
                       >
+                        {subItem.icon}
                         {subItem.name}
                       </button>
                     ))}
@@ -160,7 +244,11 @@ function Navbar() {
           </div>
 
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none" aria-label="Menu Button">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="focus:outline-none"
+              aria-label="Menu Button"
+            >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -179,7 +267,9 @@ function Navbar() {
                   {item.hasDropdown ? (
                     <>
                       <button
-                        onClick={() => setOpenDropdown(openDropdown === index ? null : index)}
+                        onClick={() =>
+                          setOpenDropdown(openDropdown === index ? null : index)
+                        }
                         className="text-white hover:text-yellow-300 transition flex items-center w-full"
                       >
                         {item.icon}
@@ -208,7 +298,11 @@ function Navbar() {
                         setIsOpen(false);
                         setOpenDropdown(null);
                       }}
-                      className={({ isActive }) => isActive ? "text-yellow-400 font-semibold flex items-center" : "text-white hover:text-yellow-300 transition flex items-center"}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-yellow-400 font-semibold flex items-center"
+                          : "text-white hover:text-yellow-300 transition flex items-center"
+                      }
                     >
                       {item.icon}
                       {item.name}

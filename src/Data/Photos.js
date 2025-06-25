@@ -8,8 +8,8 @@ const Photos = [
         title: "Educational Tour 2022"
     },
     {
-        image: "src/images/Photo/Tour_3.webp",
-        title: "Educational Tour 2022"
+        image: "src/images/Photo/Kreta.jpg",
+        title: "Kreta Surokkha Mela"
     },
     {
         image: "src/images/Photo/Tour_4.webp",
@@ -24,8 +24,8 @@ const Photos = [
         title: "Educational Tour 2023"
     },
     {
-        image: "src/images/Photo/Tour_8.webp",
-        title: "Educational Tour 2023"
+        image: "src/images/Photo/A_Sports (15).jpg",
+        title: "Annual Sports 2025"
     },
     {
         image: "src/images/Photo/Tour_9.webp",
@@ -96,16 +96,28 @@ const Photos = [
         title: "Sports Event"
     },
     {
-        image: "src/images/Photo/Event_4.jpeg",
-        title: "Science Project"
+        image: "src/images/Photo/A (2).jpg",
+        title: "Cycle Distribution to class IX"
     },
     {
-        image: "src/images/Photo/Tour_6.webp",
-        title: "Educational Tour 2020"
+        image: "src/images/Photo/A (1).jpg",
+        title: "Prayer Assembly"
     },
     {
-        image: "src/images/Photo/Program_10.jpeg",
-        title: "200th Birth Anniversary of Ishwar Chandra Vidyasagar"
+        image: "src/images/Photo/A (3).jpg",
+        title: "National Yeoga Day"
+    },
+    {
+        image: "src/images/Photo/A (4).jpg",
+        title: "Teachers"
+    },
+    {
+        image: "src/images/Photo/A (5).jpg",
+        title: "Nikhil Banga Samati"
+    },
+    {
+        image: "src/images/Photo/A (6).jpg",
+        title: "National Enviroment Day"
     },
     {
         image: "src/images/Photo/Sports_5.webp",
@@ -138,6 +150,46 @@ const Photos = [
     {
         image: "src/images/Photo/classroom.webp",
         title: "Classroom"
+    },
+    {
+        image: "src/images/Photo/classroom.jpg",
+        title: "Class V Students"
+    },
+    {
+        image: "src/images/Photo/Event (6).jpg",
+        title: "Cultural Program"
+    },
+    {
+        image: "src/images/Photo/Event (5).jpg",
+        title: "National Enviroment Day"
+    },
+    {
+        image: "src/images/Photo/Event (7).jpg",
+        title: "Saraswati Pujo"
+    },
+    {
+        image: "src/images/Photo/Event (4).jpg",
+        title: "National Anthem"
+    },
+    {
+        image: "src/images/Photo/A_Sports (18).jpg",
+        title: "Annual Sports 2025"
+    },
+    {
+        image: "src/images/Photo/Event (3).jpg",
+        title: "Cultural Program"
+    },
+    {
+        image: "src/images/Photo/A_Sports (17).jpg",
+        title: "Annual Sports 2025"
+    },
+    {
+        image: "src/images/Photo/A_Sports (8).jpg",
+        title: "Annual Sports Opening Ceremony"
+    },
+    {
+        image: "src/images/Photo/A_Sports (5).jpg",
+        title: "Annual Sports Opening Speech by president"
     },
 ];
 export default Photos

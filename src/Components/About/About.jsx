@@ -110,14 +110,14 @@ function AboutUs() {
           color: "text-blue-800",
           image: "src/images/Photo/Uniform.jpg",
           alt: "School Uniform",
-          text: "Boys wear sky blue shirts with navy trousers. Girls wear sky blue blouses with navy skirts or salwar suits. Our uniform fosters unity and discipline."
+          text: "Boys wear sky white shirts with navy trousers. Girls wear sky blue skirts with white salwar. Our uniform fosters unity and discipline."
         }, {
           icon: <School className="text-green-700 mx-auto group-hover:scale-110 transition-transform duration-300" size={36} />,
           title: "Our Campus",
           color: "text-green-800",
           image: "src/images/Photo/Campus.webp",
           alt: "School Campus",
-          text: "Our lush green campus includes modern classrooms, a library, science labs, playgrounds, and an open learning environment for holistic development."
+          text: "Our lush green campus includes modern classrooms, a library, playgrounds, and an open learning environment for holistic development."
         }].map((item, index) => (
           <div key={index} className="bg-indigo-50 rounded-xl shadow p-6 transform transition-transform duration-300 hover:scale-105 group">
             {item.icon}
@@ -137,7 +137,7 @@ function AboutUs() {
       </section>
       
       {/* Timeline */}
-      <section className="bg-gray-100 py-14">
+      {/* <section className="bg-gray-100 py-14">
         <h2 className="text-3xl font-bold text-indigo-800 text-center mb-10 transition duration-300 hover:text-indigo-600">
           Our Journey Through the Years
         </h2>
@@ -180,7 +180,7 @@ function AboutUs() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Founders Section */}
       <section className="bg-indigo-50 py-12 px-4">

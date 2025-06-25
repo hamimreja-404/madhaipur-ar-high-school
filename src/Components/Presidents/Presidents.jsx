@@ -35,11 +35,11 @@ function Presidents() {
             <blockquote className="mt-2 italic text-gray-500 border-l-4 pl-4 border-indigo-300">
               "Education isn’t about filling minds with facts, but igniting the curiosity to explore."
             </blockquote>
-            <h4 className="mt-4 text-lg font-semibold text-gray-800">Key Contributions</h4>
+            {/* <h4 className="mt-4 text-lg font-semibold text-gray-800">Key Contributions</h4>
             <p className="text-gray-700">
               Led the digital transformation of school infrastructure, supported student initiatives,
               and strengthened parent-teacher collaboration. His leadership inspires innovation and excellence.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -53,6 +53,7 @@ function Presidents() {
           {presidentsList.map((president, index) => (
             <PresidentBox
               key={index}
+              number={index+1}
               name={president.name}
               image={president.image}
               Avatar={president.Avatar}

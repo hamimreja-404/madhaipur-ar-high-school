@@ -7,9 +7,17 @@ import Notices from "../../Data/Notice";
 const isNewNotice = (dateStr) => {
   const today = new Date();
   const noticeDate = new Date(dateStr);
-  const diffInDays = (today - noticeDate) / (1000 * 60 * 60 * 24);
-  return diffInDays <= 7;
+
+  // Normalize both to start of day
+  today.setHours(0, 0, 0, 0);
+  noticeDate.setHours(0, 0, 0, 0);
+
+  const diffInTime = today.getTime() - noticeDate.getTime();
+  const diffInDays = Math.floor(diffInTime / (1000 * 60 * 60 * 24));
+
+  return diffInDays >= 0 && diffInDays <= 7;
 };
+
 const handleDownload = async (url, filename) => {
   try {
     const response = await fetch(url);
@@ -55,44 +63,59 @@ export default function Notice() {
           </h2>
 
           <ul className="space-y-4 mt-4">
-            {importantNotices.map((notice) => (
-              <li
-                key={notice.id}
-                className="bg-red-50 p-3 rounded-md hover:bg-red-100 transition"
-              >
-                <div className="flex justify-between items-start gap-3">
-                  <div className="flex items-start gap-2">
-                    <BadgeInfo className="text-red-600 mt-1" size={20} />
-                    <div>
-                      <p className="text-sm text-gray-600 flex items-center gap-1">
-                        <CalendarDays size={14} />
-                        {new Date(notice.date).toLocaleDateString()}
-                      </p>
-                      <p className="font-medium text-red-800 text-sm">
-                        {notice.title}
-                      </p>
+            {importantNotices.length > 0 ? (
+              importantNotices.map((notice) => (
+                <li
+                  key={notice.id}
+                  className="bg-red-50 p-3 rounded-md hover:bg-red-100 transition"
+                >
+                  <div className="flex justify-between items-start gap-3">
+                    <div className="flex items-start gap-2">
+                      <BadgeInfo className="text-red-600 mt-1" size={20} />
+                      <div>
+                        <p className="text-sm text-gray-600 flex items-center gap-1">
+                          <CalendarDays size={14} />
+                          {new Date(notice.date).toLocaleDateString("en-IN", {
+                            day: "2-digit",
+                            month: "2-digit",
+                            year: "numeric",
+                          })}
+                        </p>
+                        <p className="font-medium text-red-800 text-sm">
+                          {notice.title}
+                          {isNewNotice(notice.date) && (
+                            <span className="ml-2 px-2 py-0.5 text-[11px] font-bold uppercase text-white bg-red-400 rounded-full shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]">
+                              NEW
+                            </span>
+                          )}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    href={notice.fileUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-red-600 hover:text-red-800"
-                    title="Download Important Notice"
-                  >
-                    <button
-                      onClick={() =>
-                        handleDownload(notice.fileUrl, notice.title)
-                      }
-                      className="text-green-600 hover:text-green-800 cursor-pointer"
-                      title="Download Notice"
+                    <a
+                      href={notice.fileUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-600 hover:text-red-800"
+                      title="Download Important Notice"
                     >
-                      <Download size={20} />
-                    </button>
-                  </a>
-                </div>
-              </li>
-            ))}
+                      <button
+                        onClick={() =>
+                          handleDownload(notice.fileUrl, notice.title)
+                        }
+                        className="text-green-600 hover:text-green-800 cursor-pointer"
+                        title="Download Notice"
+                      >
+                        <Download size={20} />
+                      </button>
+                    </a>
+                  </div>
+                </li>
+              ))
+            ) : (
+              <p className="text-gray-500 italic">
+                📢 No Notices available at this moment.
+              </p>
+            )}
           </ul>
         </div>
 
@@ -103,53 +126,59 @@ export default function Notice() {
           </h2>
 
           <ul className="space-y-5 mt-4">
-            {generalNotices.map((notice) => (
-              <li
-                key={notice.id}
-                className="bg-white p-4 rounded-md shadow hover:shadow-md transition border border-green-200"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-start gap-3">
-                    <FileText className="text-green-700 mt-1" size={22} />
-                    <div>
-                      <h3 className="text-md font-semibold text-green-900">
-                        {notice.title}
-                        {isNewNotice(notice.date) && (
-                          <span className="ml-2 px-2 py-0.5 text-[11px] font-bold uppercase text-white bg-green-600 rounded-full shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]">
-                            NEW
+            {generalNotices.length > 0 ? (
+              generalNotices.map((notice) => (
+                <li
+                  key={notice.id}
+                  className="bg-white p-4 rounded-md shadow hover:shadow-md transition border border-green-200"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-start gap-3">
+                      <FileText className="text-green-700 mt-1" size={22} />
+                      <div>
+                        <h3 className="text-md font-semibold text-green-900">
+                          {notice.title}
+                          {isNewNotice(notice.date) && (
+                            <span className="ml-2 px-2 py-0.5 text-[11px] font-bold uppercase text-white bg-green-600 rounded-full shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]">
+                              NEW
+                            </span>
+                          )}
+                        </h3>
+                        <div className="text-sm text-gray-500 mt-1 flex items-center gap-2">
+                          <CalendarDays size={16} />
+                          {new Date(notice.date).toLocaleDateString()}
+                          <span className="ml-3 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">
+                            {notice.fileType}
                           </span>
-                        )}
-                      </h3>
-                      <div className="text-sm text-gray-500 mt-1 flex items-center gap-2">
-                        <CalendarDays size={16} />
-                        {new Date(notice.date).toLocaleDateString()}
-                        <span className="ml-3 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">
-                          {notice.fileType}
-                        </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <a
-                    href={notice.fileUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-800"
-                    title="Download Notice"
-                  >
-                    <button
-                      onClick={() =>
-                        handleDownload(notice.fileUrl, notice.title)
-                      }
-                      className="text-green-600 hover:text-green-800 cursor-pointer"
+                    <a
+                      href={notice.fileUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-600 hover:text-green-800"
                       title="Download Notice"
                     >
-                      <Download size={20} />
-                    </button>
-                  </a>
-                </div>
-              </li>
-            ))}
+                      <button
+                        onClick={() =>
+                          handleDownload(notice.fileUrl, notice.title)
+                        }
+                        className="text-green-600 hover:text-green-800 cursor-pointer"
+                        title="Download Notice"
+                      >
+                        <Download size={20} />
+                      </button>
+                    </a>
+                  </div>
+                </li>
+              ))
+            ) : (
+              <p className="text-gray-500 italic">
+                📢 No Notices available at this moment.
+              </p>
+            )}
           </ul>
         </div>
       </div>

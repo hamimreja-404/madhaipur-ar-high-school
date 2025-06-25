@@ -1,17 +1,17 @@
 const Notices = [
   {
     id: 1,
-    title: "Syllabus",
-    date: "2025-06-21",
-    fileUrl: "src/Components/NoticeData/B TECH SYLLABUS ACADEMIC SESSION 2019-20 AND ONWARDS FINAL[Replica](1).pdf",
+    title: "Holiday List",
+    date: "2025-06-24",
+    fileUrl: "src/Data/Holiday List/Modelholidaylist2025.pdf",
     fileType: "PDF",
     important: true,
   },
   {
     id: 2,
     title: "Class 12 Practical Dates Updated",
-    date: "2025-06-17",
-    fileUrl: "src/Components/NoticeData/B TECH SYLLABUS ACADEMIC SESSION 2019-20 AND ONWARDS FINAL[Replica](1).pdf",
+    date: "2025-06-08",
+    fileUrl: "src/Data/NoticeData/B TECH SYLLABUS ACADEMIC SESSION 2019-20 AND ONWARDS FINAL[Replica](1).pdf",
     fileType: "PDF",
     important: false,
   },

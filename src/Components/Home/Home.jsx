@@ -162,9 +162,9 @@ function HomePage() {
             Meet Our Vibrant School Family
           </h2>
           <div className="flex flex-wrap justify-center gap-8 text-lg sm:text-xl font-medium">
-            <Counter end={32} label="Qualified Teachers" />
+            <Counter end={20} label="Qualified Teachers" />
             <Counter end={950} label="Brilliant Students" />
-            <Counter end={12} label="Support Staff" />
+            <Counter end={3} label="Support Staff" />
           </div>
         </div>
       </section>
