@@ -1,35 +1,43 @@
+import V from "./Syllabus/V.pdf";
+import VI from "./Syllabus/VI.pdf";
+import VII from "./Syllabus/VII.pdf";
+import VIII from "./Syllabus/VIII.pdf";
+
+import IX_X from "./Syllabus/IX_X.pdf";
+import Arts from "./Syllabus/Arts.pdf";
+
 const syllabusList = [
   {
     class: "Class V",
-    fileUrl: "src/Data/Syllabus/V.pdf",
+    fileUrl: V,
   },
   {
     class: "Class VI",
-    fileUrl: "src/Data/Syllabus/VI.pdf",
+    fileUrl: VI,
   },
   {
     class: "Class VII",
-    fileUrl: "src/Data/Syllabus/VII.pdf",
+    fileUrl: VII,
   },
   {
     class: "Class VIII",
-    fileUrl: "src/Data/Syllabus/VIII.pdf",
+    fileUrl: VIII,
   },
   {
     class: "Class IX",
-    fileUrl: "src/Data/Syllabus/IX-X.pdf",
+    fileUrl: IX_X,
   },
   {
     class: "Class X",
-    fileUrl: "src/Data/Syllabus/IX-X.pdf",
+    fileUrl: IX_X,
   },
   {
     class: "Class XI",
-    fileUrl: "src/Data/Syllabus/Arts.pdf",
+    fileUrl: Arts,
   },
   {
     class: "Class XII",
-    fileUrl: "src/Data/Syllabus/Arts.pdf",
+    fileUrl: Arts,
   },
 ];
 
