@@ -1,34 +1,43 @@
+
+import Tree from "../images/Activity/Tree.jpeg";
+import Event_1 from "../images/Activity/Event_1.jpg";
+import Event_2 from "../images/Activity/Event_2.jpg";
+import A_Sports_1 from "../images/Activity/A_Sports_1.jpg";
+import COVID_19 from "../images/Activity/COVID_19.jpeg";
+import Dengue from "../images/Activity/Dengue.jpeg";
+import MDM from "../images/Activity/MDM.jpeg";
+import Khai from "../images/Activity/Khai.jpg";
 const Activity = [
     {
-        image: "src/images/Activity/COVID-19.jpeg",
+        image: COVID_19,
         title: "Rice, potato etc. distribution during covid-19"
     },
     {
-        image: "src/images/Activity/Dengue.jpeg",
+        image: Dengue,
         title: "Dengue Awareness Program"
     },
     {
-        image: "src/images/Activity/MDM.jpeg",
+        image: MDM,
         title: "With SHG of MDM regarding cleanliness"
     },
     {
-        image: "src/images/Activity/Tree.jpeg",
+        image: Tree,
         title: "Tree Plantation"
     },
     {
-        image: "src/images/Activity/A_Sports (4).jpg",
+        image: A_Sports_1,
         title: "Annual Sports 2025"
     },
     {
-        image: "src/images/Activity/Event_ (2).jpg",
+        image: Event_2,
         title: "National Yeoga Day"
     },
     {
-        image: "src/images/Activity/Event_ (1).jpg",
-        title: "Tree Plantation"
+        image: Khai,
+        title: "Khai Khai Mela 2025"
     },
     {
-        image: "src/images/Activity/Event (1).jpg",
+        image: Event_1,
         title: "Saraswati Pujo 2025"
     },
 
