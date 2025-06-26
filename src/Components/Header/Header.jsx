@@ -1,4 +1,4 @@
-import LOGO from "../../images/Logo/LOGO.png"
+import Logo_ from "../../images/Logo/Logo_.jpg"
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -161,7 +161,7 @@ function Navbar() {
 
       <div className="bg-white py-6 px-4 flex justify-center flex-col md:flex-row items-center gap-5 md:gap-10 shadow-sm">
         <img
-          src= {LOGO}
+          src= {Logo_}
           alt="School Logo"
           className="h-20 w-auto"
         />
@@ -173,7 +173,7 @@ function Navbar() {
             মাধাইপুর এ.আর. উচ্চ বিদ্যালয় (উঃমাঃ)
           </p>
           <p className="text-sm text-gray-500 mt-1">
-            Under the Department of Education, Govt. of West Bengal <br />
+            Under the school Education Department of West Bengal <br />
              School Index: R1226 | H.S. Score: 111179 <br /> Dice Code: 19060806004
           </p>
         </div>
