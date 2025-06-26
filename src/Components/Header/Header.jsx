@@ -173,7 +173,7 @@ function Navbar() {
           </p>
           <p className="text-sm text-gray-500 mt-1">
             Under the Department of Education, Govt. of West Bengal <br />
-            Dice Code: 19060806004 | School Index: R1226 | H.S. Score: 111179
+             School Index: R1226 | H.S. Score: 111179 <br /> Dice Code: 19060806004
           </p>
         </div>
       </div>
