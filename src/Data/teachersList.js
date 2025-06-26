@@ -12,14 +12,14 @@ const teachersList = [
   {
     name: "Abhik Sen",
     role: "M.A in History",
-    image: Aparba,
+    image: "",
     Avatar: Avatar_M,
     subjects: ["History"]
   },
   {
     name: "Apurba Maitra",
     role: "M.Sc in Pure Mathematics",
-    image: "",
+    image: Aparba,
     Avatar: Avatar_M,
     subjects: ["Mathematics"]
   },
