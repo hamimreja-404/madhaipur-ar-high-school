@@ -1,4 +1,4 @@
-import Logo_ from "../../images/Logo/Logo_.jpg"
+import Logo_ from "../../images/Logo/Logo_.jpg";
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -69,34 +69,44 @@ function Navbar() {
       ],
     },
     {
-      name: (
-        <span className="flex items-center gap-1">
-          <span className="ml-1">Faculty & Leadership</span>
-        </span>
-      ),
-      path: "/Faculty&Leadership",
-      hasDropdown: true,
-      submenu: [
-        {
-          name: (
-            <span className="flex items-center">
-              <Users size={14} className="mr-2" />
-              Faculty
-            </span>
-          ),
-          path: "/faculty&leadership#faculty",
-        },
-        {
-          name: (
-            <span className="flex items-center">
-              <Medal size={14} className="mr-2" />
-              Presidents
-            </span>
-          ),
-          path: "/faculty&leadership#presidents",
-        },
-      ],
+      name: "Faculty",
+      path: "/faculty",
+      icon: <Users size={18} className="mr-2" />,
     },
+    {
+      name: "Our Pillars",
+      path: "/presidents",
+      icon: <Medal size={18} className="mr-2" />,
+    },
+    // {
+    //   name: (
+    //     <span className="flex items-center gap-1">
+    //       <span className="ml-1">Faculty & Leadership</span>
+    //     </span>
+    //   ),
+    //   path: "/Faculty&Leadership",
+    //   hasDropdown: true,
+    //   submenu: [
+    //     {
+    //       name: (
+    //         <span className="flex items-center">
+    //           <Users size={14} className="mr-2" />
+    //           Faculty
+    //         </span>
+    //       ),
+    //       path: "/faculty&leadership#faculty",
+    //     },
+    //     {
+    //       name: (
+    //         <span className="flex items-center">
+    //           <Medal size={14} className="mr-2" />
+    //           Presidents
+    //         </span>
+    //       ),
+    //       path: "/faculty&leadership#presidents",
+    //     },
+    //   ],
+    // },
     // {
     //   name: "Faculty & Leadership",
     //   path: "/Faculty&Leadership",
@@ -137,7 +147,16 @@ function Navbar() {
           🎓 Dedicated to Excellence in Education
         </span>
         <div className="flex gap-4 ">
-          <span>📧 hm.mparhs@gmail.com</span>
+          <span>
+            {" "}
+            <SocialIcon
+              url="mailto:hm.mparhs@gmail.com"
+              fgColor="#fff"
+              bgColor="transparent"
+              style={{ height: 30, width: 30 }}
+            />{" "}
+            hm.mparhs@gmail.com
+          </span>
           <span>📞 +91 7908621154</span>
 
           <SocialIcon
@@ -160,11 +179,7 @@ function Navbar() {
       </div>
 
       <div className="bg-white py-6 px-4 flex justify-center flex-col md:flex-row items-center gap-5 md:gap-10 shadow-sm">
-        <img
-          src= {Logo_}
-          alt="School Logo"
-          className="h-20 w-auto"
-        />
+        <img src={Logo_} alt="School Logo" className="h-20 w-auto" />
         <div className="text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl font-bold font-serif text-slate-800">
             MADHAIPUR A.R. HIGH SCHOOL (H.S.)
@@ -174,7 +189,8 @@ function Navbar() {
           </p>
           <p className="text-sm text-gray-500 mt-1">
             Under the school Education Department of West Bengal <br />
-             School Index: R1226 | H.S. Score: 111179 <br /> Dice Code: 19060806004
+            School Index: R1226 | H.S. Code: 111179 <br /> U-DISE Code:
+            19060806004
           </p>
         </div>
       </div>

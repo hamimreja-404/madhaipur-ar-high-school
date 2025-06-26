@@ -3,8 +3,6 @@ import Chumki from "../images/Faculty/Chumki.jpg"
 import Manoj from "../images/Faculty/Manoj.jpg"
 import Runu from "../images/Faculty/Runu.jpg"
 import Wahed from "../images/Faculty/Wahed.jpg"
-
-
 import Avatar_M from '../images/Faculty/Avatar_M.jpg'
 import Avatar_F from '../images/Faculty/Avatar_F.jpg'
 

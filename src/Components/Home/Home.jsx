@@ -87,7 +87,7 @@ function HomePage() {
     <section>
       <h2 className="text-3xl font-bold text-indigo-900 mb-4 font-serif">About Us</h2>
       <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
-        Founded in 1974, Madhaipur A. R. High School (HS) is the result of a powerful vision held by three eminent local pioneers — Haji Amiruddin, Ramjan Mandal, and Radhakishan Ram. With a goal to spread the light of education in Madhaipur and its neighboring villages, they donated land and laid the foundation for a learning institution that continues to shape young minds to this day.
+        Established in 1974, Madhaipur A.R. High School (H.S) was founded through the vision and generosity of Haji Amiruddin, Ramjan Mandal, and Radhakishan Ram, who donated land to bring education to the region. Guided by early leaders like Ramjan Mandal, Ayub Ali, Abdul Latif, and Headmaster Md. Matiur Rahaman, the school grew into a center of discipline, values, and academic excellence.
       </p>
       <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
         The name "A. R." in the school title honors their legacy, reminding every student and teacher of their noble contribution. Today, the school stands tall as a pillar of knowledge, character-building, and inclusive education in the region.
