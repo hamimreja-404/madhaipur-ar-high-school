@@ -9,7 +9,8 @@ import {
   School,
   Award
 } from "lucide-react";
-
+import Uniform from "../../images/Logo/Uniform.jpg"
+import Campus from "../../images/Logo/Campus.jpg"
 const timeline = [
   {
     year: "1974",
@@ -108,14 +109,14 @@ function AboutUs() {
           icon: <Shirt className="text-blue-700 mx-auto group-hover:scale-110 transition-transform duration-300" size={36} />,
           title: "School Uniform",
           color: "text-blue-800",
-          image: "src/images/Photo/Uniform.jpg",
+          image: Uniform,
           alt: "School Uniform",
           text: "Boys wear sky white shirts with navy trousers. Girls wear sky blue skirts with white salwar. Our uniform fosters unity and discipline."
         }, {
           icon: <School className="text-green-700 mx-auto group-hover:scale-110 transition-transform duration-300" size={36} />,
           title: "Our Campus",
           color: "text-green-800",
-          image: "src/images/Photo/Campus.webp",
+          image: Campus,
           alt: "School Campus",
           text: "Our lush green campus includes modern classrooms, a library, playgrounds, and an open learning environment for holistic development."
         }].map((item, index) => (

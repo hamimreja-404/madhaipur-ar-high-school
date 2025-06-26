@@ -1,8 +1,8 @@
 import React from "react";
 import presidentsList from "../../Data/presidentsList";
 import PresidentBox from "./PresidentBox";
-import AutoSlider from "../ImageSlider/ImageSlider";
 
+import Rabiul from "../../images/Logo/Rabiul.jpg"
 function Presidents() {
   return (
     <div className="bg-white py-12 font-sans">
@@ -26,8 +26,8 @@ function Presidents() {
         <div className="flex flex-col md:flex-row bg-stone-50 border border-gray-200 rounded-2xl p-6 shadow-lg w-full max-w-5xl">
           <img
             className="w-40 h-40 md:w-48 md:h-48 rounded-xl object-cover border border-gray-300 mx-auto md:mx-0"
-            src="src/images/President/Rabiul.jpg"
-            alt="Labib Hasan"
+            src= {Rabiul}
+            alt="Rabiul Islam"
           />
           <div className="mt-4 md:mt-0 md:ml-8">
             <h3 className="text-2xl font-bold text-indigo-900">Rabiul Islam</h3>

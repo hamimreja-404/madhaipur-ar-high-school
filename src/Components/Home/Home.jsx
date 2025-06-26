@@ -6,6 +6,8 @@ import Photos from "../../Data/Photos";
 import TeacherBox from "../Faculty/facultyBox/teacherBox";
 import teachersList from "../../Data/teachersList";
 import ImportantNotice from "../Notice/ImportantNotice";
+
+import All from "../../images/Logo/All.jpg"
 function Counter({ end, label }) {
   const [count, setCount] = useState(0);
   const ref = useRef();
@@ -192,7 +194,7 @@ function HomePage() {
       <section className="relative w-full max-w-7xl h-[400px] sm:h-[450px] rounded-xl overflow-hidden shadow-md mx-auto mb-20">
         <img
           className="w-full h-full object-cover"
-          src="src/images/Group/All.jpg"
+          src= {All}
           alt="School Community"
         />
         <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-white text-center px-4">

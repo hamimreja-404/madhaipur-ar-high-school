@@ -1,3 +1,4 @@
+import LOGO from "../../images/Logo/LOGO.png"
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -160,7 +161,7 @@ function Navbar() {
 
       <div className="bg-white py-6 px-4 flex justify-center flex-col md:flex-row items-center gap-5 md:gap-10 shadow-sm">
         <img
-          src="src/images/Logo/51588971215.png"
+          src= {LOGO}
           alt="School Logo"
           className="h-20 w-auto"
         />
