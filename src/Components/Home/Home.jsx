@@ -40,7 +40,9 @@ function Counter({ end, label }) {
       ref={ref}
       className="text-center transition-transform duration-500 hover:scale-105"
     >
-      <p className="text-yellow-400 text-4xl font-extrabold font-sans">{count}+</p>
+      <p className="text-yellow-400 text-4xl font-extrabold font-sans">
+        {count}+
+      </p>
       <p className="mt-1 text-white text-lg font-light font-sans">{label}</p>
     </div>
   );
@@ -57,66 +59,84 @@ function HomePage() {
             Welcome to Madhaipur A.R. High School (H.S.)
           </h1>
           <p className="mt-4 text-lg sm:text-xl max-w-2xl drop-shadow font-light">
-            Dedicated to excellence in education since 1984 — inspiring knowledge, discipline, and character.
+            Dedicated to excellence in education since 1984 — inspiring
+            knowledge, discipline, and character.
           </p>
           <NavLink to="/about">
             <div className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300">
               <span className="text-sm font-medium">Learn More About Us</span>
-              <ArrowRightCircle size={20} className="transition-transform group-hover:translate-x-1" />
+              <ArrowRightCircle
+                size={20}
+                className="transition-transform group-hover:translate-x-1"
+              />
             </div>
           </NavLink>
         </div>
       </section>
-      <div className="flex">
-        
-        <div>
-          {/* About Section */}
-      <section className="mb-16">
-      
-        <h2 className="text-3xl font-bold text-indigo-900 mb-4 font-serif">About Us</h2>
-        <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
-          Founded in 1974, Madhaipur A. R. High School (HS) is the result of a powerful vision held by three eminent local pioneers — Haji Amiruddin, Ramjan Mandal, and Radhakishan Ram. With a goal to spread the light of education in Madhaipur and its neighboring villages, they donated land and laid the foundation for a learning institution that continues to shape young minds to this day.
-        </p>
-        <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
-          The name "A. R." in the school title honors their legacy, reminding every student and teacher of their noble contribution. Today, the school stands tall as a pillar of knowledge, character-building, and inclusive education in the region.
-        </p>
+      {/* About and Notice Section */}
+<div className="flex flex-col md:flex-row-reverse gap-6 mb-16">
+  {/* Important Notice - appears first on mobile, right on desktop */}
+  <div className="w-full md:w-1/3">
+    <ImportantNotice />
+  </div>
 
-        
-      </section>
+  {/* About Section */}
+  <div className="w-full md:w-2/3">
+    <section>
+      <h2 className="text-3xl font-bold text-indigo-900 mb-4 font-serif">About Us</h2>
+      <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
+        Founded in 1974, Madhaipur A. R. High School (HS) is the result of a powerful vision held by three eminent local pioneers — Haji Amiruddin, Ramjan Mandal, and Radhakishan Ram. With a goal to spread the light of education in Madhaipur and its neighboring villages, they donated land and laid the foundation for a learning institution that continues to shape young minds to this day.
+      </p>
+      <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
+        The name "A. R." in the school title honors their legacy, reminding every student and teacher of their noble contribution. Today, the school stands tall as a pillar of knowledge, character-building, and inclusive education in the region.
+      </p>
+    </section>
+  </div>
+</div>
+
+      <div className="mt-1 p-6 shadow flex flex-col md:flex-row md:justify-between gap-8">
+        <div className="md:w-1/2 bg-indigo-50 rounded-lg p-3 flex flex-col items-center text-center transition-transform duration-500 hover:scale-105">
+          <BookOpen className="text-indigo-600 mb-4" size={40} />
+          <h3 className="text-2xl font-semibold text-indigo-800 mb-2 font-serif">
+            Our Mission
+          </h3>
+          <p className="text-gray-700 text-base font-light">
+            To create a nurturing and inclusive educational environment where
+            every student is empowered to grow intellectually, morally, and
+            socially. We aim to build a community of learners committed to
+            excellence and compassion.
+          </p>
         </div>
-        <div>
-        <ImportantNotice/>
+
+        <div className="md:w-1/2 bg-indigo-50 rounded-lg p-3 flex flex-col items-center text-center transition-transform duration-500 hover:scale-105">
+          <Eye className="text-green-600 mb-4" size={40} />
+          <h3 className="text-2xl font-semibold text-green-800 mb-2 font-serif">
+            Our Vision
+          </h3>
+          <p className="text-gray-700 text-base font-light">
+            To be a leading institution in rural education, producing
+            responsible citizens who contribute positively to society through
+            innovation, leadership, and lifelong learning.
+          </p>
         </div>
       </div>
-      <div className="mt-1 p-6 shadow flex flex-col md:flex-row md:justify-between gap-8">
-          <div className="md:w-1/2 bg-indigo-50 rounded-lg p-3 flex flex-col items-center text-center transition-transform duration-500 hover:scale-105">
-            <BookOpen className="text-indigo-600 mb-4" size={40} />
-            <h3 className="text-2xl font-semibold text-indigo-800 mb-2 font-serif">Our Mission</h3>
-            <p className="text-gray-700 text-base font-light">
-              To create a nurturing and inclusive educational environment where every student is empowered to grow intellectually, morally, and socially. We aim to build a community of learners committed to excellence and compassion.
-            </p>
-          </div>
 
-          <div className="md:w-1/2 bg-indigo-50 rounded-lg p-3 flex flex-col items-center text-center transition-transform duration-500 hover:scale-105">
-            <Eye className="text-green-600 mb-4" size={40} />
-            <h3 className="text-2xl font-semibold text-green-800 mb-2 font-serif">Our Vision</h3>
-            <p className="text-gray-700 text-base font-light">
-              To be a leading institution in rural education, producing responsible citizens who contribute positively to society through innovation, leadership, and lifelong learning.
-            </p>
-          </div>
-        </div>
-
-        <NavLink
-          to="/about"
-          className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
-        >
-          <span className="text-sm font-medium">Read More</span>
-          <ArrowRightCircle size={20} className="transition-transform group-hover:translate-x-1" />
-        </NavLink>
+      <NavLink
+        to="/about"
+        className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
+      >
+        <span className="text-sm font-medium">Read More</span>
+        <ArrowRightCircle
+          size={20}
+          className="transition-transform group-hover:translate-x-1"
+        />
+      </NavLink>
 
       {/* Faculty Section */}
       <section className="mb-16 mt-10">
-        <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">Our Faculty</h2>
+        <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">
+          Our Faculty
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teachersList.slice(0, 3).map((teacher, index) => (
             <TeacherBox
@@ -134,13 +154,18 @@ function HomePage() {
           className="mt-6  group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
         >
           <span className="text-sm font-medium">View Full Faculty</span>
-          <ArrowRightCircle size={20} className="transition-transform group-hover:translate-x-1" />
+          <ArrowRightCircle
+            size={20}
+            className="transition-transform group-hover:translate-x-1"
+          />
         </NavLink>
       </section>
 
       {/* Gallery Section */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">Glimpses of Campus Life</h2>
+        <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">
+          Glimpses of Campus Life
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {Photos.slice(0, 8).map((img, index) => (
             <img
@@ -156,7 +181,10 @@ function HomePage() {
           className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
         >
           <span className="text-sm font-medium">View Full Gallery</span>
-          <ArrowRightCircle size={20} className="transition-transform group-hover:translate-x-1" />
+          <ArrowRightCircle
+            size={20}
+            className="transition-transform group-hover:translate-x-1"
+          />
         </NavLink>
       </section>
 
