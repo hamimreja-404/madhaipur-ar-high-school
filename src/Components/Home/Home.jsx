@@ -61,7 +61,7 @@ function HomePage() {
             Welcome to Madhaipur A.R. High School (H.S.)
           </h1>
           <p className="mt-4 text-lg sm:text-xl max-w-2xl drop-shadow font-light">
-            Dedicated to excellence in education since 1984 — inspiring
+            Dedicated to excellence in education since 1974 — inspiring
             knowledge, discipline, and character.
           </p>
           <NavLink to="/about">
