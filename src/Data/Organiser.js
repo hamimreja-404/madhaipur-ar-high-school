@@ -43,7 +43,7 @@ const Organiser = [
     name: "Abdus Samad",
     image: "",
     Avatar: "",
-    year: "1974 - 1984",
+    year: "1974 - ",
     work: "Clerk",
     current: false
   },
@@ -51,7 +51,7 @@ const Organiser = [
     name: "Mosrtuja Hossain",
     image: "",
     Avatar: "",
-    year: "1974 - 1984",
+    year: "1974 - ",
     work: "Peon",
     current: false
   },

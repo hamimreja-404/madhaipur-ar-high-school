@@ -5,21 +5,38 @@ import { Download } from "lucide-react";
 import syllabusList from "../../Data/syllabusList";
 import holidays2025 from "../../Data/HolidayList";
 import examDetails from "../../Data/examDetails";
-
+import Modelholidaylist2025 from "../../Data/Holiday_List/Modelholidaylist2025.pdf";
 const currentMonth = new Date().getMonth() + 1;
 const parseIndianDate = (dateStr) => {
   const [day, month, year] = dateStr.split("-").map(Number);
   return new Date(year, month - 1, day);
 };
+// const today = new Date();
+// today.setHours(0, 0, 0, 0); // Normalize time to midnight
+
+// const upcomingHolidays = holidays2025
+//   .map((h) => ({
+//     ...h,
+//     dateObj: parseIndianDate(h.in.split(" to ")[0]), // handles ranges
+//   }))
+//   .filter((h) => h.dateObj >= today) // only future holidays
+//   .sort((a, b) => a.dateObj - b.dateObj) // sort ascending
+//   .slice(0, 5); // take next 5
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
 const upcomingHolidays = holidays2025
   .map((h) => ({
     ...h,
-    dateObj: parseIndianDate(h.in.split(" to ")[0]), // handles ranges
+    dateObj: parseIndianDate(h.in.split(" to ")[0]),
   }))
-  .filter((h) => h.dateObj >= new Date()) // only future holidays
-  .sort((a, b) => a.dateObj - b.dateObj) // sort ascending
-  .slice(0, 5); // take next 5
+  .filter((h) => h.dateObj >= today)
+  .sort((a, b) => a.dateObj - b.dateObj)
+  .slice(0, 5);
 
+const todaysHolidays = upcomingHolidays.filter(
+  (h) => h.dateObj.getTime() === today.getTime()
+);
 const AcademicsPage = () => {
   const handleDownload = (fileUrl) => {
     const link = document.createElement("a");
@@ -90,7 +107,7 @@ const AcademicsPage = () => {
         <ul className="list-disc list-inside space-y-2 text-gray-700">
           {upcomingHolidays.length > 0 ? (
             upcomingHolidays.map((holiday, idx) => (
-              <li key={idx}>
+              <li key={idx} className={idx === 0 ? "text-red-500" : ""}>
                 <strong>{holiday.name}:</strong> {holiday.in}
               </li>
             ))
@@ -100,9 +117,7 @@ const AcademicsPage = () => {
         </ul>
         <div className="mt-4">
           <button
-            onClick={() =>
-              handleDownload("src/Data/Holiday List/Modelholidaylist2025.pdf")
-            }
+            onClick={() => handleDownload(Modelholidaylist2025)}
             className="text-indigo-600 hover:text-indigo-800 flex items-center gap-2 text-sm font-medium cursor-pointer"
           >
             <Download size={18} /> Download Full Holiday List (PDF)

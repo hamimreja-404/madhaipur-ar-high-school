@@ -111,7 +111,7 @@ function Presidents() {
           <p className="text-gray-700 max-w-3xl mx-auto text-md md:text-lg leading-relaxed">
             Madhaipur A.R. High School began its journey in <strong>1974</strong> as a community-driven institution. It received official recognition from the West Bengal Board of Secondary Education (WBBSE) on <strong>01/01/1984</strong> as a Junior High School.
             <br /><br />
-            Following this, the Managing Committee appointed several teachers and staff members who laid the foundation for its academic growth.
+            Following this, the Managing Committee appointed several teachers and non-teaching staff who laid the foundation for its academic growth.
           </p>
         </div>
 
@@ -131,12 +131,12 @@ function Presidents() {
             A few <strong>organizer teachers</strong> who played a crucial role during the school's foundation period unfortunately could not be officially appointed due to <strong>unknown reasons</strong>.
           </p>
           <p className="font-semibold text-indigo-800 mt-6">
-            The first appointed Headmaster was <strong>Munsur Ali</strong>, whose leadership and vision guided the school in its formative years.
+            The first appointed Headmaster was <strong>Munsur Rahaman</strong>, whose leadership and vision guided the school in its formative years.
           </p>
           <div className="mt-6 flex justify-center">
             <PresidentBox
               name="Munsur Rahaman"
-              role="Headmaster (First)"
+              work="Headmaster"
             />
           </div>
         </div>

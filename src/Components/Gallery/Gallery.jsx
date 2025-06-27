@@ -9,7 +9,7 @@ function Gallery() {
   return (
     <div className="bg-white py-12 font-sans ">
       <div className="flex justify-center mt-10">
-        <div className="relative w-7xl max-w-7xl h-7xl sm:h-[450px] rounded-xl overflow-hidden shadow-md">
+        <div className="relative w-full max-w-7xl h-[350px] sm:h-[450px] rounded-xl overflow-hidden shadow-md">
           <img
             className="w-full h-full object-cover"
             src= {Collage}
