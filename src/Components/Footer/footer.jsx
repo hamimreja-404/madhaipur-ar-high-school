@@ -34,7 +34,7 @@ function Footer() {
           <h2 className="text-2xl font-serif font-semibold mb-3 tracking-wide">
             MADHAIPUR A.R. HIGH SCHOOL (H.S.)
           </h2>
-          <p className="text-sm text-indigo-200">257Q+9H2, Madhaipur, West Bengal 732101</p>
+          <p className="text-sm text-indigo-200">257Q+9H2, Madhaipur, West Bengal 732142</p>
           <p className="text-sm text-indigo-200">hm.mparhs@gmail.com</p>
           <p className="text-sm text-indigo-200">+91 7908621154</p>
         </div>

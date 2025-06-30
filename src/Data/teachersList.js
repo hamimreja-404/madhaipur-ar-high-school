@@ -3,6 +3,9 @@ import Chumki from "../images/Faculty/Chumki.jpg"
 import Manoj from "../images/Faculty/Manoj.jpg"
 import Runu from "../images/Faculty/Runu.jpg"
 import Wahed from "../images/Faculty/Wahed.jpg"
+import Kaberi from "../images/Faculty/Kaberi.jpg"
+import Sehkor from "../images/Faculty/Sehkor.jpg"
+import Ratan from "../images/Faculty/Ratan.jpg"
 import Avatar_M from '../images/Faculty/Avatar_M.jpg'
 import Avatar_F from '../images/Faculty/Avatar_F.jpg'
 
@@ -45,7 +48,7 @@ const teachersList = [
   {
     name: "Kaberi Choudhury",
     role: "Sanskrit Faculty",
-    image: "",
+    image: Kaberi,
     Avatar: Avatar_M,
     subjects: ["Sanskrit"]
   },
@@ -80,7 +83,7 @@ const teachersList = [
   {
     name: "Shekhar Kr Chowdhury",
     role: "Sports Faculty",
-    image: "",
+    image: Sehkor,
     Avatar: Avatar_M,
     subjects: [" "]
   },
@@ -122,7 +125,7 @@ const teachersList = [
   {
     name: "Ratan Saha",
     role: " ",
-    image: "",
+    image: Ratan,
     Avatar: Avatar_M,
     subjects: [" "]
   },

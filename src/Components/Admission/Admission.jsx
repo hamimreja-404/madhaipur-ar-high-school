@@ -156,27 +156,27 @@ const AdmissionPage = () => {
             <tbody className="text-gray-800">
               <tr>
                 <td className="p-3 border border-indigo-100">Class V</td>
-                <td className="p-3 border border-indigo-100">₹330</td>
+                <td className="p-3 border border-indigo-100">₹240*</td>
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class VI</td>
-                <td className="p-3 border border-indigo-100">₹330</td>
+                <td className="p-3 border border-indigo-100">₹240*</td>
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class VII</td>
-                <td className="p-3 border border-indigo-100">₹330</td>
+                <td className="p-3 border border-indigo-100">₹240*</td>
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class VIII</td>
-                <td className="p-3 border border-indigo-100">₹330</td>
+                <td className="p-3 border border-indigo-100">₹240*</td>
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class IX</td>
-                <td className="p-3 border border-indigo-100">₹330</td>
+                <td className="p-3 border border-indigo-100">₹240*</td>
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class X</td>
-                <td className="p-3 border border-indigo-100">₹330</td>
+                <td className="p-3 border border-indigo-100">₹240*</td>
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class XI</td>
@@ -184,10 +184,11 @@ const AdmissionPage = () => {
               </tr>
               <tr>
                 <td className="p-3 border border-indigo-100">Class XII</td>
-                <td className="p-3 border border-indigo-100">₹1,000</td>
+                <td className="p-3 border border-indigo-100">₹800</td>
               </tr>
             </tbody>
           </table>
+              <p className="text-indigo-500 text-xs">* Saraswati Pujo & Identity Card fee not included </p>
         </div>
       </motion.section>
     </div>
