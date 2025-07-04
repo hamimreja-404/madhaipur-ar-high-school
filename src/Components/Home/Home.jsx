@@ -186,18 +186,33 @@ function HomePage() {
           ))}
         </div>
 
-        {selImage && (
-          <div
-            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
-            onClick={() => setSelImage(null)}
-          >
-            <img
-              src={selImage}
-              alt="Full view"
-              className="max-w-[90%] max-h-[90%] rounded-xl shadow-lg border-4 border-white"
-            />
-          </div>
-        )}
+{selImage && (
+  <div
+    className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
+    onClick={() => setSelImage(null)}
+  >
+    {/* Modal container to isolate click behavior */}
+    <div
+      className="relative"
+      onClick={(e) => e.stopPropagation()} // prevent closing when clicking on image
+    >
+
+      <button
+        onClick={() => setSelImage(null)}
+        className="absolute top-2 right-2 text-white text-3xl font-bold cursor-pointer px-2"
+      >
+        ❌
+      </button>
+
+      {/* Image */}
+      <img
+        src={selImage}
+        alt="Full View"
+        className="max-w-[90vw] max-h-[90vh] rounded-xl shadow-xl border-4 border-white"
+      />
+    </div>
+  </div>
+)}
 
         <NavLink
           to="/gallery"
