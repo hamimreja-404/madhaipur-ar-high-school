@@ -6,18 +6,13 @@ import Photos from "../../Data/Photos";
 import TeacherBox from "../Faculty/facultyBox/teacherBox";
 import teachersList from "../../Data/teachersList";
 import ImportantNotice from "../Notice/ImportantNotice";
-
+import Activity from "../../Data/Activity";
 import All from "../../images/Logo/All.jpg";
 
-// function Gallery({ photos }) {
-//   const [selectedImage, setSelectedImage] = useState(null);
-// }
 function Counter({ end, label }) {
   const [count, setCount] = useState(0);
-
   const ref = useRef();
-  console.log(Photos);
-  console.log(TeacherBox);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -57,6 +52,7 @@ function Counter({ end, label }) {
 
 function HomePage() {
   const [selImage, setSelImage] = useState(null);
+
   return (
     <main className="max-w-7xl mx-auto px-4 py-8 font-sans">
       {/* Hero Section */}
@@ -81,39 +77,31 @@ function HomePage() {
           </NavLink>
         </div>
       </section>
-      {/* About and Notice Section */}
+
+      {/* About + Notice */}
       <div className="flex flex-col md:flex-row-reverse gap-6 mb-16">
-        {/* Important Notice - appears first on mobile, right on desktop */}
         <div className="w-full mt-20 md:w-1/3">
           <ImportantNotice />
         </div>
-
-        {/* About Section */}
         <div className="w-full md:w-2/3">
-          <section>
-            <h2 class="text-4xl font-bold text-center md:5">
-              <span class="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
-                About Us
-              </span>
-            </h2>
-            <p className="mt-10 text-gray-700 leading-relaxed text-lg mb-4 font-light">
-              Established in 1974, Madhaipur A.R. High School (H.S) was founded
-              through the vision and generosity of Haji Amiruddin, Ramjan
-              Mandal, and Radhakishan Ram, who donated land to bring education
-              to the region. Guided by early leaders like Ramjan Mandal, Ayub
-              Ali, Abdul Latif, and Headmaster Md. Matiur Rahaman, the school
-              grew into a center of discipline, values, and academic excellence.
-            </p>
-            <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
-              The name "A. R." in the school title honors their legacy,
-              reminding every student and teacher of their noble contribution.
-              Today, the school stands tall as a pillar of knowledge,
-              character-building, and inclusive education in the region.
-            </p>
-          </section>
+          <h2 className="text-4xl font-bold text-center">
+            <span className="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+              About Us
+            </span>
+          </h2>
+          <p className="mt-10 text-gray-700 leading-relaxed text-lg mb-4 font-light">
+            Established in 1974, Madhaipur A.R. High School (H.S) was founded
+            through the vision and generosity of Haji Amiruddin, Ramjan Mandal,
+            and Radhakishan Ram, who donated land to bring education to the
+            region...
+          </p>
+          <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
+            The name "A. R." in the school title honors their legacy...
+          </p>
         </div>
       </div>
 
+      {/* Mission & Vision */}
       <div className="mt-1 p-6 shadow flex flex-col md:flex-row md:justify-between gap-8">
         <div className="md:w-1/2 bg-indigo-50 rounded-lg p-3 flex flex-col items-center text-center transition-transform duration-500 hover:scale-105">
           <BookOpen className="text-indigo-600 mb-4" size={40} />
@@ -121,10 +109,7 @@ function HomePage() {
             Our Mission
           </h3>
           <p className="text-gray-700 text-base font-light">
-            To create a nurturing and inclusive educational environment where
-            every student is empowered to grow intellectually, morally, and
-            socially. We aim to build a community of learners committed to
-            excellence and compassion.
+            To create a nurturing and inclusive educational environment...
           </p>
         </div>
 
@@ -134,49 +119,26 @@ function HomePage() {
             Our Vision
           </h3>
           <p className="text-gray-700 text-base font-light">
-            To be a leading institution in rural education, producing
-            responsible citizens who contribute positively to society through
-            innovation, leadership, and lifelong learning.
+            To be a leading institution in rural education...
           </p>
         </div>
       </div>
 
-      <NavLink
-        to="/about"
-        className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
-      >
-        <span className="text-sm font-medium">Read More</span>
-        <ArrowRightCircle
-          size={20}
-          className="transition-transform group-hover:translate-x-1"
-        />
-      </NavLink>
-
       {/* Faculty Section */}
       <section className="mb-16 mt-10">
-        <h2 class="text-4xl font-bold text-center md:5">
-          <span class="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center">
+          <span className="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
             Our Faculty
           </span>
         </h2>
-        {/* <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">
-          Our Faculty
-        </h2> */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teachersList.slice(0, 3).map((teacher, index) => (
-            <TeacherBox
-              key={index}
-              name={teacher.name}
-              role={teacher.role}
-              image={teacher.image}
-              subjects={teacher.subjects}
-              Avatar={teacher.Avatar}
-            />
+            <TeacherBox key={index} {...teacher} />
           ))}
         </div>
         <NavLink
           to="/Faculty"
-          className="mt-6  group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
+          className="mt-6 inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
         >
           <span className="text-sm font-medium">View Full Faculty</span>
           <ArrowRightCircle
@@ -186,13 +148,10 @@ function HomePage() {
         </NavLink>
       </section>
 
-      {/* Gallery Section */}
+      {/* Gallery */}
       <section className="mb-16">
-        {/* <h2 className="text-2xl font-bold text-indigo-900 mb-4 font-serif">
-          Glimpses of Campus Life
-        </h2> */}
-        <h2 class="text-4xl font-bold text-center md:5">
-          <span class="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center">
+          <span className="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
             Glimpses of Campus Life
           </span>
         </h2>
@@ -200,12 +159,12 @@ function HomePage() {
           {Photos.slice(0, 8).map((img, index) => (
             <div
               key={index}
-              className="relative group rounded-xl overflow-hidden "
+              className="relative group rounded-xl overflow-hidden"
               onClick={() => setSelImage(img.image)}
             >
               <img
                 src={img.image}
-                alt={`gallery-${index}`}
+                alt={img.title}
                 className="rounded-xl w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-2 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl cursor-zoom-in">
@@ -227,7 +186,6 @@ function HomePage() {
           ))}
         </div>
 
-        {/* Modal */}
         {selImage && (
           <div
             className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
@@ -241,20 +199,9 @@ function HomePage() {
           </div>
         )}
 
-        {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-10">
-          {Photos.slice(0, 8).map((img, index) => (
-            <img
-              key={index}
-              alt={`gallery-${index}`}
-              src={img.image}
-              className="rounded-xl shadow-md object-cover w-full h-[200px] transition-transform duration-500 hover:scale-105"
-            />
-          ))}
-          
-        </div> */}
         <NavLink
           to="/gallery"
-          className="mt-6 group relative inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
+          className="mt-6 inline-flex items-center gap-2 px-6 py-2 bg-indigo-900 text-white rounded-full shadow-md hover:bg-indigo-800 transition-all duration-300"
         >
           <span className="text-sm font-medium">View Full Gallery</span>
           <ArrowRightCircle
@@ -264,8 +211,39 @@ function HomePage() {
         </NavLink>
       </section>
 
+      {/* Activity Section */}
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold text-center">
+          <span className="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+            Extra Curriculum Activities
+          </span>
+        </h2>
+
+        <div className="overflow-hidden mt-10 w-full">
+          <div className="flex animate-slide-horizontal w-max ">
+            {[...Activity, ...Activity].map((img, idx) => (
+              <div
+                key={idx}
+                className="relative w-[250px] h-[300px] flex-shrink-0  overflow-hidden shadow"
+              >
+                <img
+                  src={img.image}
+                  alt={`activity-${idx}`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 w-full pt-[10%] pb-2 px-3 bg-gradient-to-t from-white to-transparent">
+                  <h3 className="text-md font-semibold text-[#3f4e50] text-center truncate">
+                    {img.title}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
-      <section className="relative w-full max-w-7xl h-[400px] sm:h-[450px] rounded-xl overflow-hidden shadow-md mx-auto mb-20">
+      <section className="relative w-full max-w-7xl h-[400px] sm:h-[450px] rounded-xl overflow-hidden shadow-md mx-auto ">
         <img
           className="w-full h-full object-cover"
           src={All}
