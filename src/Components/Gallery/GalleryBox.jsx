@@ -17,7 +17,7 @@ function GalleryBox({ title, image }) {
         />
 
         {/* Hover overlay */}
-        <div className="absolute z-60 inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+        <div className="absolute  inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
           <svg
             className="w-14 h-14 text-white"
             fill="none"
@@ -42,18 +42,33 @@ function GalleryBox({ title, image }) {
       </div>
 
       {/* Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
-          onClick={() => setSelectedImage(null)}
-        >
-          <img
-            src={selectedImage}
-            alt="Full View"
-            className="max-w-[90%] max-h-[90%] rounded-xl shadow-xl border-4 border-white"
-          />
-        </div>
-      )}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
+    onClick={() => setSelectedImage(null)}
+  >
+    {/* Modal container to isolate click behavior */}
+    <div
+      className="relative"
+      onClick={(e) => e.stopPropagation()} // prevent closing when clicking on image
+    >
+
+      <button
+        onClick={() => setSelectedImage(null)}
+        className="absolute top-2 right-2 text-white text-3xl font-bold cursor-pointer px-2"
+      >
+        ❌
+      </button>
+
+      {/* Image */}
+      <img
+        src={selectedImage}
+        alt="Full View"
+        className="max-w-[90vw] max-h-[90vh] rounded-xl shadow-xl border-4 border-white"
+      />
+    </div>
+  </div>
+)}
     </>
   );
 }
