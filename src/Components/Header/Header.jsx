@@ -78,46 +78,6 @@ function Navbar() {
       path: "/presidents",
       icon: <Medal size={18} className="mr-2" />,
     },
-    // {
-    //   name: (
-    //     <span className="flex items-center gap-1">
-    //       <span className="ml-1">Faculty & Leadership</span>
-    //     </span>
-    //   ),
-    //   path: "/Faculty&Leadership",
-    //   hasDropdown: true,
-    //   submenu: [
-    //     {
-    //       name: (
-    //         <span className="flex items-center">
-    //           <Users size={14} className="mr-2" />
-    //           Faculty
-    //         </span>
-    //       ),
-    //       path: "/faculty&leadership#faculty",
-    //     },
-    //     {
-    //       name: (
-    //         <span className="flex items-center">
-    //           <Medal size={14} className="mr-2" />
-    //           Presidents
-    //         </span>
-    //       ),
-    //       path: "/faculty&leadership#presidents",
-    //     },
-    //   ],
-    // },
-    // {
-    //   name: "Faculty & Leadership",
-    //   path: "/Faculty&Leadership",
-    //   hasDropdown: true,
-    //   submenu: [
-    //     { name: "Faculty", path: "/faculty",icon: <Users size={15} className="mr-2" />  },
-    //     { name: "Presidents", path: "/presidents", icon: <Medal size={15} className="mr-2" /> }
-    //   ],
-    // },
-    // { name: "Faculty", path: "/faculty", icon: <Users size={18} className="mr-2" /> },
-    // { name: "Presidents", path: "/presidents", icon: <Medal size={18} className="mr-2" /> },
     {
       name: "Gallery",
       path: "/gallery",

@@ -68,7 +68,7 @@ function Presidents() {
 
       {/* The Pillars of Our Legacy: Founding Committee & Dedicated Educators*/}
       <div className="max-w-7xl mt-5 mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10">
+        <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-10">
           The Pillars of Our Legacy <br /> Founding Committee & Dedicated
           Educators
         </h2>
@@ -86,7 +86,7 @@ function Presidents() {
         </div>
       </div>
       <div className="max-w-7xl mt-5 mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10">
+        <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-10">
           Organiser Teachers and Non-teaching Staff
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -105,7 +105,7 @@ function Presidents() {
     <div className="bg-white py-12 px-4 md:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-4">
             Organizational History & Early Contributors
           </h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-md md:text-lg leading-relaxed">
@@ -130,7 +130,7 @@ function Presidents() {
           <p className="mb-4">
             A few <strong>organizer teachers</strong> who played a crucial role during the school's foundation period unfortunately could not be officially appointed due to <strong>unknown reasons</strong>.
           </p>
-          <p className="font-semibold text-indigo-800 mt-6">
+          <p className="font-semibold text-gray-700 mt-6">
             The first appointed Headmaster was <strong>Munsur Rahaman</strong>, whose leadership and vision guided the school in its formative years.
           </p>
           <div className="mt-6 flex justify-center">
@@ -146,7 +146,7 @@ function Presidents() {
 
       {/* Past Presidents */}
       <div className="max-w-7xl mx-auto px-4 mt-5">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10">
+        <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-10">
           Ex-Secretaries
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -164,7 +164,7 @@ function Presidents() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 mt-5">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10">
+        <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-10">
           Presidents
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

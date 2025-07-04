@@ -19,7 +19,7 @@ function Faculty() {
               alt="Faculty Group"
             />
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center px-4">
-              <h1 className="text-3xl sm:text-5xl font-bold mb-4 mt-25">
+              <h1 className="text-3xl sm:text-5xl font-bold mb-4 mt-25 ">
                 Meet Our Exceptional Faculty
               </h1>
               <p className="max-w-2xl text-sm sm:text-lg">
@@ -33,7 +33,7 @@ function Faculty() {
 
         {/* ✅ Head Teacher Box */}
         <div className="max-w-4xl mx-auto px-4 mt-10">
-          <h2 className="text-3xl font-bold text-center text-indigo-800 mb-6">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-6">
             Head Teacher 
           </h2>
           <div className="flex justify-center">
@@ -49,7 +49,7 @@ function Faculty() {
 
         {/* Regular Teachers */}
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-indigo-800 mt-10 mb-10">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mt-10 mb-10">
             Assistance Teachers
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -68,7 +68,7 @@ function Faculty() {
 
         {/* Para-Teachers */}
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-indigo-800 mt-10 mb-10">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mt-10 mb-10">
             Para Teachers 
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -87,7 +87,7 @@ function Faculty() {
 
         {/* Non-Teaching Staff */}
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-indigo-800 mt-10 mb-10">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mt-10 mb-10">
             Non-Teaching Staff
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -28,7 +28,7 @@ function AboutUs() {
 
       {/* Our Story */}
       <section className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-center text-indigo-800 mb-6">
+        <h1 className="text-4xl font-bold text-center  mb-7 bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
           Welcome to Madhaipur A.R. High School (H.S)
         </h1>
         <p className="text-lg leading-relaxed text-justify text-gray-800">
@@ -150,7 +150,7 @@ function AboutUs() {
       {/* Honoring Founders */}
           <section className="bg-indigo-50 text-gray-800 py-12 px-6 md:px-16 lg:px-32" id="acknowledgement">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
           Acknowledging Our Founders & Early Leaders
         </h2>
         <p className="text-lg leading-relaxed mb-6">

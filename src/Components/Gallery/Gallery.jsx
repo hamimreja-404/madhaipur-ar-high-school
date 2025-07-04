@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Photos from "../../Data/Photos";
 import GalleryBox from "./GalleryBox";
 import Activity from "../../Data/Activity";
 import GloriousMoments from "../../Data/GloriousMoments";
 import { NavLink } from "react-router-dom";
-import Collage from "../../images/Logo/Collage.jpg"
+import Collage from "../../images/Logo/Collage.jpg";
+import { div } from "framer-motion/client";
 function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div className="bg-white py-12 font-sans ">
       <div className="flex justify-center mt-10">
         <div className="relative w-full max-w-7xl h-[350px] sm:h-[450px] rounded-xl overflow-hidden shadow-md">
           <img
             className="w-full h-full object-cover"
-            src= {Collage}
+            src={Collage}
             alt="Faculty Group"
           />
           <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center px-4">
@@ -27,30 +29,41 @@ function Gallery() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10 mt-10">
+        {/* <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10 mt-10">
           Glorious Moments
+        </h2> */}
+        <h2 class="mb-10 mt-10 text-4xl font-bold text-center md:5">
+          <span class="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+            Glorious Moments
+          </span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {GloriousMoments.map((photo, index) => (
             <GalleryBox key={index} image={photo.image} title={photo.title} />
           ))}
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10 mt-10">
-          Various Events
+        <h2 class="mb-10 mt-10 text-4xl font-bold text-center md:5">
+          <span class="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+            Various Events
+          </span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div className="justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {Activity.map((photo, index) => (
             <GalleryBox key={index} image={photo.image} title={photo.title} />
           ))}
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-10 mt-10">
-          Explore All Photos
+        <h2 class="mb-10 mt-10 text-4xl font-bold text-center md:5">
+          <span class="bg-gradient-to-r from-indigo-900 via-purple-700 to-purple-900 bg-clip-text text-transparent">
+            Explore All Photos
+          </span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div className="justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {Photos.map((photo, index) => (
             <GalleryBox key={index} image={photo.image} title={photo.title} />
           ))}
@@ -99,10 +112,9 @@ function Gallery() {
             }
           >
             <p className="bg-indigo-600 hover:bg-indigo-700 transition duration-300 ease-in-out text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-1">
-            📤 Submit Your Photos
-          </p>
+              📤 Submit Your Photos
+            </p>
           </NavLink>
-          
         </div>
       </div>
     </div>
