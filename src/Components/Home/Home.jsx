@@ -90,13 +90,10 @@ function HomePage() {
             </span>
           </h2>
           <p className="mt-10 text-gray-700 leading-relaxed text-lg mb-4 font-light">
-            Established in 1974, Madhaipur A.R. High School (H.S) was founded
-            through the vision and generosity of Haji Amiruddin, Ramjan Mandal,
-            and Radhakishan Ram, who donated land to bring education to the
-            region...
+           Established in 1974, Madhaipur A.R. High School (H.S) was founded through the vision and generosity of Haji Amiruddin, Ramjan Mandal, and Radhakishan Ram, who donated land to bring education to the region. Guided by early leaders like Ramjan Mandal, Ayub Ali, Abdul Latif, and Headmaster Md. Matiur Rahaman, the school grew into a center of discipline, values, and academic excellence.
           </p>
           <p className="text-gray-700 leading-relaxed text-lg mb-4 font-light">
-            The name "A. R." in the school title honors their legacy...
+            The name "A. R." in the school title honors their legacy, reminding every student and teacher of their noble contribution. Today, the school stands tall as a pillar of knowledge, character-building, and inclusive education in the region.
           </p>
         </div>
       </div>
@@ -109,7 +106,10 @@ function HomePage() {
             Our Mission
           </h3>
           <p className="text-gray-700 text-base font-light">
-            To create a nurturing and inclusive educational environment...
+            To create a nurturing and inclusive educational environment where
+            every student is empowered to grow intellectually, morally, and
+            socially. We aim to build a community of learners committed to
+            excellence and compassion.
           </p>
         </div>
 
@@ -119,7 +119,9 @@ function HomePage() {
             Our Vision
           </h3>
           <p className="text-gray-700 text-base font-light">
-            To be a leading institution in rural education...
+            To be a leading institution in rural education, producing
+            responsible citizens who contribute positively to society through
+            innovation, leadership, and lifelong learning.
           </p>
         </div>
       </div>
