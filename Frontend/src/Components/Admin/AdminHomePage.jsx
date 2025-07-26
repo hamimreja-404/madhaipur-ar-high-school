@@ -8,8 +8,6 @@ export default function AdminHomePage() {
   const [pendingImages, setPendingImages] = useState([]);
   const [gallery, setGallery] = useState([]);
 
-  const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/<your-cloud-name>/image/upload";
-  const UPLOAD_PRESET = "<your-upload-preset>"; // From Cloudinary settings
 
   const handleUpload = async () => {
     if (!file || !title) {
